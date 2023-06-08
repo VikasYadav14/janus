@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <nav class="lg:py-14 lg:px-28 p-10 relative flex justify-between items-center">
+    <a class="text-3xl font-bold leading-none" href="#">
+        <img src="assets/socials/logo.png" alt="Janus Logo">
+    </a>
+    <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-[#3100fb] p-3">
+            <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </button>
+    </div>
+    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="services.html">Services</a></li>
+        <li class="text-base font-bold relative parent">
+          <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+              <span>Service</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+          </a>
+          <ul class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+              <li>
+                  <a href="services/app-development.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                      App development
+                  </a>
+              </li>
+              <li>
+                  <a href="services/artificial-intelligence.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                      Artificial Intelligence
+                  </a>
+              </li>
+              <li>
+                  <a href="services/business-intelligence.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                      Business Intelligence
+                  </a>
+              </li>
+          </ul>
+      </li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="#">Projects</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
+        <li class="pl-10">
+            <img src="assets/socials/menu.png" alt="menu bar">
+        </li>
+    </ul>
+</nav>
+<div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+        <div class="flex items-center mb-8">
+            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                <img src="assets/socials/logo.png" alt="Janus Logo">
+            </a>
+            <button class="navbar-close">
+                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div>
+            <ul>
+                <li class="mb-1">
+                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                        href="about.html">About Us</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                        href="services.html">Services</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                        href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                        href="contact.html">Let's Talk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+  <!-- client and testimonial section -->
+  <section id="#home" class="page-section">
+    <section class="p-20">
+      <div class="container mx-auto">
+        <!-- Client Section -->
+        <div class="my-10">
+          <div class="border-l-2 border-black h-100">
+            <h2 class="text-2xl text-[#3100fb] font-bold mb-4 ml-4">Our Clients</h2>
+          </div>
+          <div class="flex flex-wrap items-center justify-center">
+            <img src="assets/clients/dlf.png" alt="Client Logo" class="h-32 mx-4 my-2" />
+            <img src="assets/clients/carlberg.png" alt="Client Logo" class="h-32 mx-4 my-2" />
+            <img src="assets/clients/airbnb.png" alt="Client Logo" class="h-32 mx-4 my-2" />
+            <img src="assets/clients/jsw.png" alt="Client Logo" class="h-32 mx-4 my-2" />
+          </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="container mx-auto">
+          <div class="flex justify-center m-4">
+            <h2 class="text-xl font-bold mb-4 uppercase text-[#3100fb]">Our Clients Speak</h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+
+            <!-- Testimonial card 1 -->
+            <div class="testimonial-card">
+              <div class="bg-[linear-gradient(185deg,_#3100fb_50%,_#F5F5F5_50%)] flex p-4 rounded-lg">
+                <div class="w-2/5 lg:p-8">
+                  <img class="w-2/3 rounded-full border-4"
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="" />
+                </div>
+                <div class="flex flex-col justify-around items-start w-3/5 pl-4">
+                  <div>
+                    <p class="font-light text-sm text-white">Team Janus Service remains topnotch all
+                      these years. Much has Changed for the better</p>
+                  </div>
+                  <div class="-m-5">
+                    <h3 class="text-black font-bold text-base">Tim Wednesday 1</h3>
+                    <p class="text-sm">Marketing Head, Airbnb</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial card 2 -->
+            <div class="testimonial-card">
+              <div class="bg-[linear-gradient(185deg,_#3100fb_50%,_#F5F5F5_50%)] flex p-4 rounded-lg">
+                <div class="w-2/5 lg:p-8">
+                  <img class="w-2/3 rounded-full border-4"
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&w=1000&q=80"
+                    alt="" />
+                </div>
+                <div class="flex flex-col justify-around items-start w-3/5 pl-4">
+                  <div>
+                    <p class="font-light text-sm text-white">Team Janus Service remains topnotch all
+                      these years. Much has Changed for the better</p>
+                  </div>
+                  <div class="-m-5">
+                    <h3 class="text-black font-bold text-base">Tim Wednesday 2</h3>
+                    <p class="text-sm">Marketing Head, Airbnb</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial card 3 -->
+            <div class="testimonial-card">
+              <div class="bg-[linear-gradient(185deg,_#3100fb_50%,_#F5F5F5_50%)] flex p-4 rounded-lg">
+                <div class="w-2/5 lg:p-8">
+                  <img class="w-2/3 rounded-full border-4"
+                    src="https://images6.fanpop.com/image/photos/37300000/Random-Girl-people-37325426-236-354.jpg"
+                    alt="" />
+                </div>
+                <div class="flex flex-col justify-around items-start w-3/5 pl-4">
+                  <div>
+                    <p class="font-light text-sm text-white">Team Janus Service remains topnotch all
+                      these years. Much has Changed for the better</p>
+                  </div>
+                  <div class="-m-5">
+                    <h3 class="text-black font-bold text-base">Tim Wednesday 3</h3>
+                    <p class="text-sm">Marketing Head, Airbnb</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial card 4 -->
+            <div class="testimonial-card">
+              <div class="bg-[linear-gradient(185deg,_#3100fb_50%,_#F5F5F5_50%)] flex p-4 rounded-lg">
+                <div class="w-2/5 lg:p-8">
+                  <img class="w-2/3 rounded-full border-4"
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFuZG9tJTIwcGVvcGxlfGVufDB8fDB8fHww&w=1000&q=80"
+                    alt="" />
+                </div>
+                <div class="flex flex-col justify-around items-start w-3/5 pl-4">
+                  <div>
+                    <p class="font-light text-sm text-white">Team Janus Service remains topnotch all
+                      these years. Much has Changed for the better</p>
+                  </div>
+                  <div class="-m-5">
+                    <h3 class="text-black font-bold text-base">Tim Wednesday 4</h3>
+                    <p class="text-sm">Marketing Head, Airbnb</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial card 5 -->
+            <div class="testimonial-card">
+              <div class=" bg-[linear-gradient(185deg,_#3100fb_50%,_#F5F5F5_50%)] flex p-4 rounded-lg">
+                <div class="w-2/5 lg:p-8">
+                  <img class="w-2/3 rounded-full border-4"
+                    src="https://media.istockphoto.com/id/500282387/photo/girl-at-railroad.jpg?s=170667a&w=0&k=20&c=9w6o9sgARrAY0-DlQ3_wOB6BSiLHvSFdG4ICGABgN7o="
+                    alt="" />
+                </div>
+                <div class="flex flex-col justify-around items-start w-3/5 pl-4">
+                  <div>
+                    <p class="font-light text-sm text-white">Team Janus Service remains topnotch all
+                      these years. Much has Changed for the better</p>
+                  </div>
+                  <div class="-m-5">
+                    <h3 class="text-black font-bold text-base">Tim Wednesday 5</h3>
+                    <p class="text-sm">Marketing Head, Airbnb</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="flex justify-end m-4">
+            <button class="testimonial-btn previous bg-[#333333] text-white rounded-full p-2 shadow-md mr-4">
+              <svg class="w-6 h-6 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M19 12a1 1 0 0 1-1 1H8.414l1.293 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.414l3-3a1 1 0 0 1 1.414 1.414L8.414 11H18a1 1 0 0 1 1 1z"
+                  style="fill:#ffffff" data-name="Left" />
+              </svg>
+            </button>
+            <button class="testimonial-btn next bg-[#333333] text-white rounded-full p-2 shadow-md">
+              <svg class="w-6 h-6 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="m18.707 12.707-3 3a1 1 0 0 1-1.414-1.414L15.586 13H6a1 1 0 0 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414z"
+                  style="fill:#ffffff" data-name="Right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="bg-gray-100">
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <!-- Form column -->
+        <div class="m-10 md:ml-20 lg:ml-40">
+          <h1 class="text-4xl font-bold text-[#3100FB]">Get a Free Consultation</h1>
+          <h4 class="mt-4">
+            Get in touch with us for a free consult on the scope of your project.
+          </h4>
+          <form class="grid grid-cols-2 gap-4 mt-8">
+            <div>
+              <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputFullName"
+                placeholder="Full Name" />
+            </div>
+            <div>
+              <input type="email" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputEmail"
+                placeholder="E-mail" />
+            </div>
+            <div>
+              <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputContactNumber"
+                placeholder="Contact Number" />
+            </div>
+            <div>
+              <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputLocation"
+                placeholder="Location" />
+            </div>
+            <div class="col-span-2">
+              <textarea class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputProject" rows="5"
+                placeholder="Briefly tell us about your project"></textarea>
+            </div>
+            <div class="col-span-2">
+              <select id="inputBudget" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full">
+                <option disabled selected class="text-gray-500">Budget on your mind</option>
+                <option>10000</option>
+                <option>20000</option>
+                <option>30000</option>
+                <option>40000</option>
+              </select>
+            </div>
+            <div class="col-span-2">
+              <label for="inputFile" class="block font-medium">Upload files</label>
+              <input class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" type="file" id="inputFile" />
+            </div>
+            <div class="flex justify-between">
+              <div class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
+                data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                Submit
+              </div>
+            </div>
+          </form>
+
+        </div>
+
+        <!-- Contact address column -->
+        <div class="bg-[#3100FB] text-white p-16">
+          <h2 class="text-4xl font-bold mb-4">Contact Address</h2>
+          <div class="flex flex-col justify-between content-center">
+            <div class="mb-5">
+              <h1 class="text-xl lg:text-3xl font-bold">USA</h1>
+              <p class="text-sm lg:text-base">
+                5th Avenue<br />
+                7th Cross, Calvin Ridge<br />
+                Taxas-32587<br />
+                Phone: +1885 6785 12
+              </p>
+            </div>
+            <div class="mb-5 lg:flex justify-between">
+              <div class="overflow-x-visible">
+                <h1 class="text-xl lg:text-3xl font-bold">Delhi, India</h1>
+                <p class="text-sm lg:text-base">
+                  5th Avenue<br />
+                  7th Cross, Calvin Ridge<br />
+                  Taxas-32587<br />
+                  Phone: +1885 6785 12
+                </p>
+              </div>
+              <div class="mt-10">
+                <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a
+                    href="mailto:hello@janus.com">hello@janus.com</a></h3>
+                <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                    4554</a></h3>
+              </div>
+            </div>
+            <div class="p-5 flex">
+              <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/socials/linkedin.svg" alt="youtube logo" />
+              </a>
+              <a class="text-white mr-2 " href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/socials/youtube.svg" alt="youtube logo" />
+              </a>
+              <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/socials/instagram.svg" alt="youtube logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </section>
+  
+</body>
+<!-- footer -->
+<footer class="bg-[#333333] text-white py-8">
+  <div class="container mx-auto p-10 text-center">
+    <div class="md:flex justify-around">
+      <!-- About column -->
+      <div class="mb-8">
+        <h3 class="mb-4">About Janus</h3>
+        <p class="text-sm">Lorem Ipsum is simply dummy text of <br />
+          the printing and typesetting industry.<br />
+          Lorem Ipsum has been the industry's<br />
+          standard dummy text ever since the<br />
+          1500s.Lorem Ipsum is simply dummy<br />
+          text of the printing and typesetting</br />
+          industry. Lorem Ipsum has been the <br />
+          industry's standard dummy text
+        </p>
+      </div>
+
+      <!-- Links column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Quick Links</h3>
+        <ul class="text-md">
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Services</a></li>
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Blog</a></li>
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Contact</a></li>
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacts column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Contacts</h3>
+        <p class="text-lg">5th Avenue<br />
+          7th Cross, Calvin Ridge<br />
+          Taxas-32587<br />
+          Phone : + 1885 6785 12</p>
+        <p class="text-sm my-4">hello@janus.com</p>
+        <p class="text-sm">+91 8856 34 4554</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+</html>
