@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (min-width: 768px) {
+            .parent:hover .child {
+                opacity: 1;
+                height: auto;
+                overflow: none;
+                transform: translateY(0);
+            }
+
+            .child {
+                opacity: 0;
+                height: 0;
+                overflow: hidden;
+                transform: translateY(-10%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="lg:py-14 lg:px-28 p-10 relative flex justify-between items-center">
+        <a class="text-3xl font-bold leading-none" href="#">
+            <img src="assets/socials/logo.png" alt="Janus Logo">
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-[#3100fb] p-3">
+                <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <title>Mobile menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
+            <li class="text-base font-bold relative parent">
+                <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+                    <span>Service</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                        <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                    </svg>
+                </a>
+                <ul
+                    class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+                    <li>
+                        <a href="services/app-development.html"
+                            class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                            App development
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services/artificial-intelligence.html"
+                            class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                            Artificial Intelligence
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services/business-intelligence.html"
+                            class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                            Business Intelligence
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li><a class="text-base font-bold hover:text-[#3100fb]" href="#">Projects</a></li>
+            <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
+            <li class="pl-10 cursor-auto">
+                <img src="assets/socials/menu.png" alt="menu bar">
+            </li>
+        </ul>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img src="assets/socials/logo.png" alt="Janus Logo">
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                            href="about.html">About Us</a>
+                    </li>
+                    <li class="relative" data-te-dropdown-item-ref>
+                        <button type="button" id="dropdownMenuButton1" data-te-dropdown-toggle-ref aria-expanded="false"
+                            class="p-4 text-base font-semibold">
+                            Dropdown button
+                            <span class="ml-2 w-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="h-5 w-5">
+                                    <path fill-rule="evenodd"
+                                        d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </button>
+                        <ul class="absolute z-[1000] left-0 mt-2 w-full list-none overflow-hidden rounded-lg bg-white bg-clip-padding text-left text-base shadow-lg"
+                            aria-labelledby="dropdownMenuButton1" data-te-dropdown-menu-ref>
+                            <li>
+                                <a class="block p-2 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                                    href="services/app-development.html " data-te-dropdown-item-ref>App Development</a>
+                            </li>
+                            <li>
+                                <a class="block p-2 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                                    href="services/artificial-intelligence.html" data-te-dropdown-item-ref>Artificial
+                                    Intelligence</a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="block p-2 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                                    href="services/business-intelligence.html" data-te-dropdown-item-ref>Business
+                                    Intelligence</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mb-1">
+                        <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                            href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+                            href="contact.html">Let's Talk</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- contact page -->
+    <div class="map-responsive">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28828.605370859776!2d77.05206471832075!3d28.660049122392795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05b18bd7ff37%3A0xd20e9f6a7efd0bf4!2sGali%20Number%2013%2C%20Kunwar%20Singh%20Nagar%2C%20Kamruddin%20Nagar%2C%20Delhi!5e0!3m2!1sen!2sin!4v1686208622080!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <section class="md:p-28 p-14">
+        <!-- Contact address column -->
+
+        <div class="md:flex gap-10">
+            <div class="md:w-2/5 flex flex-col justify-around">
+                <div class="text-[#3100fb]">
+                    <h1 class="text-4xl font-extrabold">Feel Free to ask
+                        us anything</h1>
+                </div>
+                <div class="my-4">
+                    <p class="text-sm lg:text-base">
+                        5th Avenue<br />
+                        7th Cross, Calvin Ridge<br />
+                        Taxas-32587<br />
+                        Phone: +1885 6785 12
+                    </p>
+                    <p class="text-sm lg:text-base hover:text-gray-400 my-4"><a
+                            href="mailto:hello@janus.com">hello@janus.com</a></p>
+                    <p class="text-sm lg:text-base hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                            4554</a></p>
+                </div>
+                <div>
+                    <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/socials/linkedin.png" alt="LinkedIn" />
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-3/5">
+                <form class="grid grid-cols-2 gap-8 mt-8">
+                
+                    <div>
+                        <label for="inputEmail"></label>
+                        <input type="text" class="border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputFullName"
+                            placeholder="Full Name" />
+                    </div>
+                    <div>
+                        <label for="inputEmail"></label>
+                        <input type="email" class="border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputEmail"
+                            placeholder="E-mail" />
+                    </div>
+                    <div class="col-span-2">
+                        <label for="inputSubject"></label>
+                        <input type="text" class="border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputSubject"
+                            placeholder="Subject" />
+                    </div>
+                    <div class="col-span-2">
+                        <label for="inputProject"></label>
+                        <textarea class="border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputProject" rows="5"
+                            placeholder="Drop us a few lines here..."></textarea>
+                    </div>
+                        <button class="bg-[#3100fb] text-white font-bold rounded-md hover:bg-white hover:text-[#3100fb] hover:border-[#3100fb] border-2 py-4 "
+                            type="submit" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+                            Send
+                    </button>
+                </form>
+
+            </div>
+    </section>
+</body>
+<!-- footer -->
+<footer class="bg-[#333333] text-white py-8">
+    <div class="container mx-auto p-10">
+        <div class="md:flex justify-around">
+            <!-- About column -->
+            <div class="mb-8">
+                <h3 class="mb-4">About Janus</h3>
+                <p class="text-base">Lorem Ipsum is simply dummy text of <br />
+                    the printing and typesetting industry.<br />
+                    Lorem Ipsum has been the industry's<br />
+                    standard dummy text ever since the<br />
+                    1500s.Lorem Ipsum is simply dummy<br />
+                    text of the printing and typesetting</br />
+                    industry. Lorem Ipsum has been the <br />
+                    industry's standard dummy text
+                </p>
+            </div>
+
+            <!-- Links column -->
+            <div class="mb-8">
+                <h3 class="mb-4">Quick Links</h3>
+                <ul class="text-md">
+                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Services</a></li>
+                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Blog</a></li>
+                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Contact</a></li>
+                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">About</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacts column -->
+            <div class="mb-8">
+                <h3 class="mb-4">Contacts</h3>
+                <p class="text-base">5th Avenue<br />
+                    7th Cross, Calvin Ridge<br />
+                    Taxas-32587<br />
+                    Phone : + 1885 6785 12</p>
+                <p class="text-base my-4">hello@janus.com</p>
+                <p class="text-base">+91 8856 34 4554</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
+</html>

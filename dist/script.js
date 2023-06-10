@@ -93,3 +93,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   }
 });
+
+const dynamicText = document.getElementById('dynamic-text');
+const keywords = ['Web Development', 'Artificial Intelligence','Business Intelligence','App Development']; // Add more keywords as needed
+let currentIndex = 0;
+
+function changeText() {
+  dynamicText.innerText =`${keywords[currentIndex]}`;
+  currentIndex++;
+  if (currentIndex >= keywords.length) {
+    currentIndex = 0;
+  }
+}
+
+setInterval(changeText, 2000); // Change the text every 3 seconds (adjust the interval as desired)
+

@@ -5,97 +5,238 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Janus Technologies | Home </title>
+  <meta name="description" content="I’m a back-end web developer specializing in building backend API's." />
+  <link rel="icon" href="assets/home/small-logo.png" />
   <link rel="stylesheet" href="styles.css">
+  <style>
+    @media only screen and (min-width: 768px) {
+      .parent:hover .child {
+        opacity: 1;
+        height: auto;
+        overflow: none;
+        transform: translateY(0);
+      }
 
+      .child {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transform: translateY(-10%);
+      }
+    }
+
+    .typing-text {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.15em solid #000;
+      /* Adjust the color and size as needed */
+      animation: typing 1s steps(40) infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 
-<body>
-  <nav class="lg:py-14 lg:px-28 p-10 relative flex justify-between items-center">
-    <a class="text-3xl font-bold leading-none" href="#">
+<navbar>
+  <div class="lg:py-14 lg:px-28 p-10 relative">
+    <nav class="flex justify-between items-center z-1000">
+      <a class="text-3xl font-bold leading-none" href="#">
         <img src="assets/socials/logo.png" alt="Janus Logo">
-    </a>
-    <div class="lg:hidden">
+      </a>
+      <div class="lg:hidden">
         <button class="navbar-burger flex items-center text-[#3100fb] p-3">
-            <svg class="block h-8 w-8 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Mobile menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
+          <img src="assets/socials/menu.png" alt="Janus Logo">
         </button>
-    </div>
-    <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
-        <li><a class="text-base font-bold hover:text-[#3100fb]" href="services.html">Services</a></li>
+      </div>
+      <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
         <li class="text-base font-bold relative parent">
           <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
-              <span>Service</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
+            <span>Service</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
           </a>
-          <ul class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
-              <li>
-                  <a href="services/app-development.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
-                      App development
-                  </a>
-              </li>
-              <li>
-                  <a href="services/artificial-intelligence.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
-                      Artificial Intelligence
-                  </a>
-              </li>
-              <li>
-                  <a href="services/business-intelligence.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
-                      Business Intelligence
-                  </a>
-              </li>
+          <ul
+            class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+            <li>
+              <a href="services/app-development.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                App development
+              </a>
+            </li>
+            <li>
+              <a href="services/artificial-intelligence.html"
+                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                Artificial Intelligence
+              </a>
+            </li>
+            <li>
+              <a href="services/business-intelligence.html"
+                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                Business Intelligence
+              </a>
+            </li>
           </ul>
-      </li>
+        </li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="#">Projects</a></li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
-        <li class="pl-10">
-            <img src="assets/socials/menu.png" alt="menu bar">
+        <li class="pl-10 cursor-auto">
+          <img src="assets/socials/menu.png" alt="menu bar">
         </li>
-    </ul>
-</nav>
-<div class="navbar-menu relative z-50 hidden">
-    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-    <nav
-        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-        <div class="flex items-center mb-8">
-            <a class="mr-auto text-3xl font-bold leading-none" href="#">
-                <img src="assets/socials/logo.png" alt="Janus Logo">
-            </a>
-            <button class="navbar-close">
-                <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                    </path>
-                </svg>
-            </button>
-        </div>
-        <div>
-            <ul>
-                <li class="mb-1">
-                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                        href="about.html">About Us</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                        href="services.html">Services</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                        href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                        href="contact.html">Let's Talk</a>
-                </li>
-            </ul>
-        </div>
+      </ul>
     </nav>
-</div>
-  <!-- client and testimonial section -->
-  <section id="#home" class="page-section">
-    <section class="p-20">
+    <div class="hidden md:block mt-4 pl-16">
+      <div class="border-l-2 border-black h-100">
+        <p class="text-base text-black font-bold mb-4 ml-8">App Development | Business Intelligence | Artificial
+          Inteligence</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+      <div class="flex items-center mb-8">
+        <a class="mr-auto text-3xl font-bold leading-none" href="#">
+          <img src="assets/socials/logo.png" alt="Janus Logo">
+        </a>
+        <button class="navbar-close">
+          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul>
+          <li class="mb-1">
+            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+              href="about.html">About Us</a>
+          </li>
+          <li class="mb-1">
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+              class="flex justify-between md:inline-flex p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded w-full"
+              type="button"><span>Dropdown button </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-blue-50 divide-y divide-gray-100 rounded-md shadow w-auto">
+              <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="#" class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">App
+                    Development</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Artificial
+                    Intelligence</a>
+                </li>
+                <li>
+                  <a href="#"
+                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Business
+                    Intelligence</a>
+                </li>
+              </ul>
+            </div>
+
+          </li>
+
+          <li class="mb-1">
+            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+              href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="mb-1">
+            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+              href="contact.html">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</navbar>
+
+<body>
+  <div class="p-8 md:p-16 lg:p-32">
+    <div class="pb-28">
+      <h1 class="font-extrabold">
+        A team of experienced <br /> professionals, helping clients in <br /><span id="dynamic-text"
+          class="text-[#3100fb]">App Development</span>
+      </h1>
+    </div>
+
+    <div class="mb-8">
+      <div class="md:flex justify-center items-center mb-16">
+        <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
+            src="assets/home/customSoftware.png" alt="App Development"></div>
+        <div class="md:w-1/2 px-8">
+          <h6 class="mb-2">01______________ What We Do</h5>
+            <h2 class="font-extrabold mb-8">Custom Software</h2>
+            <img class="block md:hidden lg:hidden" src="assets/home/customSoftware.png" alt="App Development">
+            <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.<br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
+      <div class="md:flex justify-center items-center mb-16">
+        <div class="md:w-1/2 px-8">
+          <h6 class="mb-2">02______________ What We Do</h5>
+            <h2 class="font-extrabold mb-8 ">Artificial Intelligence</h2>
+            <img class="block md:hidden lg:hidden" src="assets/home/artificialIntelligence.png"
+              alt="Artificial Intelligence">
+            <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.<br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.</p>
+        </div>
+        <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
+            src="assets/home/artificialIntelligence.png" alt="Artificial Intelligence"></div>
+      </div>
+      <div class="md:flex justify-center items-center mb-16">
+        <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
+            src="assets/home/webDevelopment.png" alt="Website Development"></div>
+        <div class="md:w-1/2 px-8">
+          <h6 class="mb-2">03______________ What We Do</h5>
+            <h2 class="font-extrabold mb-8">Website Development</h2>
+            <img class="block lg:hidden md:hidden" src="assets/home/webDevelopment.png" alt="Website Development">
+            <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.<br />
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.Lorem Ipsum is simply dummy text of the printing
+              and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s.</p>
+        </div>
+      </div>
+    </div>
+    <!-- client and testimonial section -->
+    <section>
       <div class="container mx-auto">
         <!-- Client Section -->
         <div class="my-10">
@@ -242,117 +383,216 @@
         </div>
       </div>
     </section>
+  </div>
 
-    <!-- contact section -->
-    <section class="bg-gray-100">
-      <div class="grid grid-cols-1 md:grid-cols-2">
-        <!-- Form column -->
-        <div class="m-10 md:ml-20 lg:ml-40">
-          <h1 class="text-4xl font-bold text-[#3100FB]">Get a Free Consultation</h1>
-          <h4 class="mt-4">
-            Get in touch with us for a free consult on the scope of your project.
-          </h4>
-          <form class="grid grid-cols-2 gap-4 mt-8">
-            <div>
-              <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputFullName"
-                placeholder="Full Name" />
-            </div>
-            <div>
-              <input type="email" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputEmail"
-                placeholder="E-mail" />
-            </div>
-            <div>
-              <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputContactNumber"
-                placeholder="Contact Number" />
-            </div>
-            <div>
-              <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputLocation"
-                placeholder="Location" />
-            </div>
-            <div class="col-span-2">
-              <textarea class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputProject" rows="5"
-                placeholder="Briefly tell us about your project"></textarea>
-            </div>
-            <div class="col-span-2">
-              <select id="inputBudget" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full">
-                <option disabled selected class="text-gray-500">Budget on your mind</option>
-                <option>10000</option>
-                <option>20000</option>
-                <option>30000</option>
-                <option>40000</option>
-              </select>
-            </div>
-            <div class="col-span-2">
-              <label for="inputFile" class="block font-medium">Upload files</label>
-              <input class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" type="file" id="inputFile" />
-            </div>
-            <div class="flex justify-between">
-              <div class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
-                data-bs-toggle="tooltip" data-bs-title="Default tooltip">
-                Submit
-              </div>
-            </div>
-          </form>
-
+  <!-- contact section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-100">
+    <!-- Form column -->
+    <div class="m-10 md:ml-20 lg:ml-40">
+      <h1 class="text-4xl font-bold text-[#3100FB]">Get a Free Consultation</h1>
+      <h4 class="mt-4">
+        Get in touch with us for a free consult on the scope of your project.
+      </h4>
+      <form class="grid grid-cols-2 gap-4 mt-8">
+        <div>
+          <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputFullName"
+            placeholder="Full Name" />
         </div>
+        <div>
+          <input type="email" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputEmail"
+            placeholder="E-mail" />
+        </div>
+        <div>
+          <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputContactNumber"
+            placeholder="Contact Number" />
+        </div>
+        <div>
+          <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputLocation"
+            placeholder="Location" />
+        </div>
+        <div class="col-span-2">
+          <textarea class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputProject" rows="5"
+            placeholder="Briefly tell us about your project"></textarea>
+        </div>
+        <div class="col-span-2">
+          <select id="inputBudget" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full cursor-pointer">
+            <option disabled selected class="text-gray-500">Budget on your mind</option>
+            <option>10000</option>
+            <option>20000</option>
+            <option>30000</option>
+            <option>40000</option>
+          </select>
+        </div>
+        <div class="col-span-2">
+          <label for="inputFile"
+            class="flex bg-white cursor-pointer border-2 border-gray-800 rounded-md py-2 px-3 w-auto">Upload
+            files</label>
+          <input class="hidden" type="file" id="inputFile" />
+        </div>
+        <div class="flex justify-center col-span-2">
+          <div class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
+            data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+            Submit
+          </div>
+        </div>
+      </form>
 
-        <!-- Contact address column -->
-        <div class="bg-[#3100FB] text-white p-16">
-          <h2 class="text-4xl font-bold mb-4">Contact Address</h2>
-          <div class="flex flex-col justify-between content-center">
-            <div class="mb-5">
-              <h1 class="text-xl lg:text-3xl font-bold">USA</h1>
-              <p class="text-sm lg:text-base">
-                5th Avenue<br />
-                7th Cross, Calvin Ridge<br />
-                Taxas-32587<br />
-                Phone: +1885 6785 12
-              </p>
+    </div>
+
+    <!-- Contact address column -->
+    <div class="bg-[#3100FB] text-white p-16">
+      <h2 class="text-4xl font-bold mb-4">Contact Address</h2>
+      <div class="flex flex-col justify-between content-center">
+        <div class="mb-5">
+          <h1 class="text-xl lg:text-3xl font-bold">USA</h1>
+          <p class="text-sm lg:text-base">
+            5th Avenue<br />
+            7th Cross, Calvin Ridge<br />
+            Taxas-32587<br />
+            Phone: +1885 6785 12
+          </p>
+        </div>
+        <div class="mb-16 lg:flex justify-between">
+          <div class="overflow-x-visible">
+            <h1 class="text-xl lg:text-3xl font-bold">Delhi, India</h1>
+            <p class="text-sm lg:text-base">
+              5th Avenue<br />
+              7th Cross, Calvin Ridge<br />
+              Taxas-32587<br />
+              Phone: +1885 6785 12
+            </p>
+          </div>
+          <div class="mt-10">
+            <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a
+                href="mailto:hello@janus.com">hello@janus.com</a></h3>
+            <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                4554</a></h3>
+          </div>
+        </div>
+        <div class="flex">
+          <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/socials/linkedin.svg" alt="linkedin logo" />
+          </a>
+          <a class="text-white mr-2 " href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/socials/youtube.svg" alt="youtube logo" />
+          </a>
+          <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/socials/instagram.svg" alt="instagram logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-[#D3EFFF] md:py-28 md:px-16 py-14 px-8">
+    <div class="flex flex-col justify-center items-center m-4">
+      <h6 class="uppercase mb-4 text-[#3100fb]">A Few Good Reason</h6>
+      <h1 class="font-extrabold mb-4">Why choose Us</h3>
+        <div class="border-b-4 border-[#3100fb] h-1 w-28 mb-8"></div>
+
+
+  </div>
+    <div class="grid grid-rows-3 grid-flow-col gap-4">
+      <div class="flex flex-col justify-center bg-white p-4 row-span-3 ...">
+        <div class="flex justify-between mb-8">
+          <img src="assets/home/01.png" alt="01">
+          <img src="assets/home/experience-team.png" >
+        </div>
+        <div class="flex flex-col text-end">
+          <h3 class="mb-8">Experienced Team</h3>
+          <p>Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard
+            dummy text ever since the 1500s.Lorem Ipsum
+            is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever
+            since the 1500s.</p>
+        </div>
+      </div>
+      <div class="bg-[#d3efff] row-span-3 col-span-2 ...">
+        <div class="grid grid-cols-6 gap-4">
+          <div class="bg-white col-span-2">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/innovative-approach.png" >
+              <img src="assets/home/02.png" alt="02">
             </div>
-            <div class="mb-5 lg:flex justify-between">
-              <div class="overflow-x-visible">
-                <h1 class="text-xl lg:text-3xl font-bold">Delhi, India</h1>
-                <p class="text-sm lg:text-base">
-                  5th Avenue<br />
-                  7th Cross, Calvin Ridge<br />
-                  Taxas-32587<br />
-                  Phone: +1885 6785 12
-                </p>
-              </div>
-              <div class="mt-10">
-                <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a
-                    href="mailto:hello@janus.com">hello@janus.com</a></h3>
-                <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
-                    4554</a></h3>
-              </div>
+            <div class="flex flex-col text-end">
+              <h3 class="mb-8">Innovative Approach</h3>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
             </div>
-            <div class="p-5 flex">
-              <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-                <img src="assets/socials/linkedin.svg" alt="youtube logo" />
-              </a>
-              <a class="text-white mr-2 " href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-                <img src="assets/socials/youtube.svg" alt="youtube logo" />
-              </a>
-              <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-                <img src="assets/socials/instagram.svg" alt="youtube logo" />
-              </a>
+          </div>
+          <div class="bg-white col-span-4 ...">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/proven-expertise.png" >
+              <img src="assets/home/03.png" alt="03">
+            </div>
+            <div class="flex flex-col text-end">
+              <h3 class="mb-8">Proven Expertise</h3>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
+            </div>
+          </div>
+          <div class="bg-[#7857ff] col-span-4">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/user-centric.png" >
+              <img src="assets/home/04.png" alt="04">
+            </div>
+            <div class="flex flex-col text-end">
+              <h3 class="mb-8">User Centric</h3>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
+            </div>
+          </div>
+          <div class="bg-white col-span-2 ...">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/fast-turn-around-time.png" >
+              <img src="assets/home/05.png" alt="05">
+            </div>
+            <div class="flex flex-col text-start">
+              <h3 class="mb-8">Fast Turn-around Time</h3>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
             </div>
           </div>
         </div>
       </div>
-      </div>
-    </section>
-  </section>
-  
+    </div>
+  </div>
+
 </body>
 <!-- footer -->
 <footer class="bg-[#333333] text-white py-8">
-  <div class="container mx-auto p-10 text-center">
+  <div class="container mx-auto p-10">
     <div class="md:flex justify-around">
       <!-- About column -->
       <div class="mb-8">
         <h3 class="mb-4">About Janus</h3>
-        <p class="text-sm">Lorem Ipsum is simply dummy text of <br />
+        <p class="text-base">Lorem Ipsum is simply dummy text of <br />
           the printing and typesetting industry.<br />
           Lorem Ipsum has been the industry's<br />
           standard dummy text ever since the<br />
@@ -377,16 +617,17 @@
       <!-- Contacts column -->
       <div class="mb-8">
         <h3 class="mb-4">Contacts</h3>
-        <p class="text-lg">5th Avenue<br />
+        <p class="text-base">5th Avenue<br />
           7th Cross, Calvin Ridge<br />
           Taxas-32587<br />
           Phone : + 1885 6785 12</p>
-        <p class="text-sm my-4">hello@janus.com</p>
-        <p class="text-sm">+91 8856 34 4554</p>
+        <p class="text-base my-4">hello@janus.com</p>
+        <p class="text-base">+91 8856 34 4554</p>
       </div>
     </div>
   </div>
 </footer>
 <script src="script.js"></script>
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+
 </html>
