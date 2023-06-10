@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Janus Technologies | Home </title>
-  <meta name="description" content="I’m a back-end web developer specializing in building backend API's." />
+  <meta name="description" content="" />
   <link rel="icon" href="assets/home/small-logo.png" />
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -25,31 +25,12 @@
         transform: translateY(-10%);
       }
     }
-
-    .typing-text {
-      width: 100%;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 0.15em solid #000;
-      /* Adjust the color and size as needed */
-      animation: typing 1s steps(40) infinite;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-
-      to {
-        width: 100%;
-      }
-    }
   </style>
 </head>
 
 <navbar>
   <div class="lg:py-14 lg:px-28 p-10 relative">
-    <nav class="flex justify-between items-center z-1000">
+    <nav class="flex justify-between items-center z-10">
       <a class="text-3xl font-bold leading-none" href="#">
         <img src="assets/socials/logo.png" alt="Janus Logo">
       </a>
@@ -60,7 +41,7 @@
       </div>
       <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
         <li class="text-base font-bold relative parent">
-          <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+          <a class="flex justify-between md:inline-flex p-4 items-center hover:text-[#3100fb] space-x-2">
             <span>Service</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
               <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
@@ -87,7 +68,8 @@
             </li>
           </ul>
         </li>
-        <li><a class="text-base font-bold hover:text-[#3100fb]" href="#">Projects</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="portfolio/index.html">Portfolio&apos;s</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="about.html">About Us</a></li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
         <li class="pl-10 cursor-auto">
           <img src="assets/socials/menu.png" alt="menu bar">
@@ -126,7 +108,7 @@
           <li class="mb-1">
             <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
               class="flex justify-between md:inline-flex p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded w-full"
-              type="button"><span>Dropdown button </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+              type="button"><span>Services </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
                 stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg></button>
@@ -134,27 +116,25 @@
             <div id="dropdown" class="z-10 hidden bg-blue-50 divide-y divide-gray-100 rounded-md shadow w-auto">
               <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
                 <li>
-                  <a href="#" class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">App
+                  <a href="services/app-development.html" class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">App
                     Development</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="services/artificial-intelligence.html"
                     class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Artificial
                     Intelligence</a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="services/business-intelligence.html"
                     class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Business
                     Intelligence</a>
                 </li>
               </ul>
             </div>
-
           </li>
-
           <li class="mb-1">
             <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-              href="portfolio.html">Portfolio</a>
+              href="portfolio/index.html">Portfolio&apos;s</a>
           </li>
           <li class="mb-1">
             <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
@@ -235,7 +215,110 @@
         </div>
       </div>
     </div>
-    <!-- client and testimonial section -->
+  </div>
+
+  <div class="bg-[#D3EFFF] md:py-28 md:px-16 py-14 px-8">
+    <div class="flex flex-col justify-center items-center m-4">
+      <h6 class="uppercase mb-4 text-[#3100fb]">A Few Good Reason</h6>
+      <h1 class="font-extrabold mb-4">Why choose Us</h3>
+        <div class="border-b-4 border-[#3100fb] h-1 w-28 mb-8"></div>
+    </div>
+    <div class="md:grid grid-rows-9 grid-flow-col gap-4">
+      <div class="flex flex-col justify-center bg-white p-4 mb-8 row-span-3 ...">
+        <div class="flex justify-between mb-8">
+          <img class="hidden md:block" src="assets/home/01.png" alt="01">
+          <img src="assets/home/experience-team.png">
+          <img class="block md:hidden" src="assets/home/01.png" alt="01">
+        </div>
+        <div class="flex flex-col text-start md:text-end">
+          <h5 class="text-xl mb-8">Experienced Team</h5>
+          <p>Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard
+            dummy text ever since the 1500s.Lorem Ipsum
+            is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been
+            the industry's standard dummy text ever
+            since the 1500s.</p>
+        </div>
+      </div>
+      <div class="bg-[#d3efff] row-span-3 col-span-4 ...">
+        <div class="md:grid grid-cols-8 gap-4">
+          <div class="flex flex-col justify-center bg-white p-4 col-span-3 mb-8 md:mb-0">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/innovative-approach.png">
+              <img src="assets/home/02.png" alt="02">
+            </div>
+            <div class="flex flex-col text-start">
+              <h5 class="text-xl mb-8">Innovative Approach</h5>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center bg-white p-4 mb-8 md:mb-0 col-span-5 ...">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/proven-expertise.png">
+              <img src="assets/home/03.png" alt="03">
+            </div>
+            <div class="flex flex-col text-start">
+              <h5 class="text-xl mb-8">Proven Expertise</h5>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center p-4 bg-[#7857ff] mb-8 col-span-5">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/user-centric.png">
+              <img src="assets/home/04.png" alt="04">
+            </div>
+            <div class="flex flex-col text-start">
+              <h5 class="text-xl mb-8">User Centric</h5>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center bg-white p-4 mb-8 col-span-3 ...">
+            <div class="flex justify-between mb-8">
+              <img src="assets/home/fast-turn-around-time.png">
+              <img src="assets/home/05.png" alt="05">
+            </div>
+            <div class="flex flex-col text-start">
+              <h5 class="text-xl mb-8">Fast Turn-around Time</h5>
+              <p>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard
+                dummy text ever since the 1500s.Lorem Ipsum
+                is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum has been
+                the industry's standard dummy text ever
+                since the 1500s.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- client and testimonial section -->
+
+  <div class="p-8 md:p-16 lg:p-32">
     <section>
       <div class="container mx-auto">
         <!-- Client Section -->
@@ -386,38 +469,38 @@
   </div>
 
   <!-- contact section -->
-  <div class="grid grid-cols-1 md:grid-cols-2 bg-gray-100">
+  <div class="grid grid-cols-1 md:grid-cols-2 bg-[#7857ff]">
     <!-- Form column -->
     <div class="m-10 md:ml-20 lg:ml-40">
-      <h1 class="text-4xl font-bold text-[#3100FB]">Get a Free Consultation</h1>
+      <h1 class="text-4xl font-bold text-white">Get a free consultation</h1>
       <h4 class="mt-4">
         Get in touch with us for a free consult on the scope of your project.
       </h4>
       <form class="grid grid-cols-2 gap-4 mt-8">
         <div>
-          <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputFullName"
+          <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputFullName"
             placeholder="Full Name" />
         </div>
         <div>
-          <input type="email" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputEmail"
+          <input type="email" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputEmail"
             placeholder="E-mail" />
         </div>
         <div>
-          <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputContactNumber"
+          <input type="tel" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputContactNumber"
             placeholder="Contact Number" />
         </div>
         <div>
-          <input type="text" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputLocation"
+          <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputLocation"
             placeholder="Location" />
         </div>
         <div class="col-span-2">
-          <textarea class="border-2 border-gray-800 rounded-md py-2 px-3 w-full" id="inputProject" rows="5"
+          <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputProject" rows="5"
             placeholder="Briefly tell us about your project"></textarea>
         </div>
         <div class="col-span-2">
-          <select id="inputBudget" class="border-2 border-gray-800 rounded-md py-2 px-3 w-full cursor-pointer">
+          <select id="inputBudget" class="border-none rounded-md py-2 px-3 w-full cursor-pointer">
             <option disabled selected class="text-gray-500">Budget on your mind</option>
-            <option>10000</option>
+            <option class="">10000</option>
             <option>20000</option>
             <option>30000</option>
             <option>40000</option>
@@ -425,7 +508,7 @@
         </div>
         <div class="col-span-2">
           <label for="inputFile"
-            class="flex bg-white cursor-pointer border-2 border-gray-800 rounded-md py-2 px-3 w-auto">Upload
+            class="flex bg-white cursor-pointer border-none rounded-md py-2 px-3 w-auto">Upload
             files</label>
           <input class="hidden" type="file" id="inputFile" />
         </div>
@@ -483,107 +566,37 @@
       </div>
     </div>
   </div>
-  <div class="bg-[#D3EFFF] md:py-28 md:px-16 py-14 px-8">
-    <div class="flex flex-col justify-center items-center m-4">
-      <h6 class="uppercase mb-4 text-[#3100fb]">A Few Good Reason</h6>
-      <h1 class="font-extrabold mb-4">Why choose Us</h3>
-        <div class="border-b-4 border-[#3100fb] h-1 w-28 mb-8"></div>
+<!-- component -->
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<div class="flex justify-center h-screen">
+<div x-data="{ dropdownOpen: true }" class="relative my-32">
+  <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 block rounded-md bg-white p-2 focus:outline-none">
+    <svg class="h-5 w-5 text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+    </svg>
+  </button>
 
+  <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
 
+  <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+      your profile
+    </a>
+    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+      Your projects
+    </a>
+    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+      Help
+    </a>
+    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+      Settings
+    </a>
+    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-blue-500 hover:text-white">
+      Sign Out
+    </a>
   </div>
-    <div class="grid grid-rows-3 grid-flow-col gap-4">
-      <div class="flex flex-col justify-center bg-white p-4 row-span-3 ...">
-        <div class="flex justify-between mb-8">
-          <img src="assets/home/01.png" alt="01">
-          <img src="assets/home/experience-team.png" >
-        </div>
-        <div class="flex flex-col text-end">
-          <h3 class="mb-8">Experienced Team</h3>
-          <p>Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard
-            dummy text ever since the 1500s.Lorem Ipsum
-            is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been
-            the industry's standard dummy text ever
-            since the 1500s.</p>
-        </div>
-      </div>
-      <div class="bg-[#d3efff] row-span-3 col-span-2 ...">
-        <div class="grid grid-cols-6 gap-4">
-          <div class="bg-white col-span-2">
-            <div class="flex justify-between mb-8">
-              <img src="assets/home/innovative-approach.png" >
-              <img src="assets/home/02.png" alt="02">
-            </div>
-            <div class="flex flex-col text-end">
-              <h3 class="mb-8">Innovative Approach</h3>
-              <p>Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard
-                dummy text ever since the 1500s.Lorem Ipsum
-                is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever
-                since the 1500s.</p>
-            </div>
-          </div>
-          <div class="bg-white col-span-4 ...">
-            <div class="flex justify-between mb-8">
-              <img src="assets/home/proven-expertise.png" >
-              <img src="assets/home/03.png" alt="03">
-            </div>
-            <div class="flex flex-col text-end">
-              <h3 class="mb-8">Proven Expertise</h3>
-              <p>Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard
-                dummy text ever since the 1500s.Lorem Ipsum
-                is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever
-                since the 1500s.</p>
-            </div>
-          </div>
-          <div class="bg-[#7857ff] col-span-4">
-            <div class="flex justify-between mb-8">
-              <img src="assets/home/user-centric.png" >
-              <img src="assets/home/04.png" alt="04">
-            </div>
-            <div class="flex flex-col text-end">
-              <h3 class="mb-8">User Centric</h3>
-              <p>Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard
-                dummy text ever since the 1500s.Lorem Ipsum
-                is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever
-                since the 1500s.</p>
-            </div>
-          </div>
-          <div class="bg-white col-span-2 ...">
-            <div class="flex justify-between mb-8">
-              <img src="assets/home/fast-turn-around-time.png" >
-              <img src="assets/home/05.png" alt="05">
-            </div>
-            <div class="flex flex-col text-start">
-              <h3 class="mb-8">Fast Turn-around Time</h3>
-              <p>Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry. Lorem
-                Ipsum has been the industry's standard
-                dummy text ever since the 1500s.Lorem Ipsum
-                is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been
-                the industry's standard dummy text ever
-                since the 1500s.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+</div>
+</div>
 </body>
 <!-- footer -->
 <footer class="bg-[#333333] text-white py-8">
@@ -629,5 +642,4 @@
 </footer>
 <script src="script.js"></script>
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
-
 </html>
