@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth < 768) {
       numVisibleCards = 1; // For mobile view, show 1 card at a time
     } else {
-      numVisibleCards = 2; // For desktop and tablet view, show 2 cards at a time
+      numVisibleCards = isPortfolioPage() ? 3 : 2;
     }
   }
 
@@ -29,6 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
   function showPreviousCards() {
     testimonialCards.unshift(...testimonialCards.splice(-numVisibleCards));
     showCards();
+  }
+
+  function isPortfolioPage() {
+    return window.location.href.includes("portfolio");
   }
 
   testimonialBtns.forEach((btn) => {
@@ -95,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 const dynamicText = document.getElementById('dynamic-text');
-const keywords = ['Web Development', 'Artificial Intelligence','Business Intelligence','App Development']; // Add more keywords as needed
+const keywords = ['Web Development', 'Artificial Intelligence','Business Intelligence','App Development'];
 let currentIndex = 0;
 
 function changeText() {
@@ -106,5 +110,4 @@ function changeText() {
   }
 }
 
-setInterval(changeText, 2000); // Change the text every 3 seconds (adjust the interval as desired)
-
+setInterval(changeText, 2000);

@@ -31,7 +31,7 @@
 <navbar>
     <div class="lg:py-14 lg:px-28 p-10 relative">
         <nav class="flex justify-between items-center z-1000">
-            <a class="text-3xl font-bold leading-none" href="index.html">
+            <a class="text-3xl font-bold leading-none" href="./">
                 <img src="assets/socials/logo.png" alt="Janus Logo">
             </a>
             <div class="lg:hidden">
@@ -41,7 +41,7 @@
             </div>
             <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
                 <li class="text-base font-bold relative parent">
-                    <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
+                    <a class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
                         <span>Service</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
                             <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
@@ -69,7 +69,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a class="text-base font-bold hover:text-[#3100fb]" href="portfolio/index.html">Portfolio&apos;s</a>
+                <li><a class="text-base font-bold hover:text-[#3100fb]" href="portfolio">Portfolio&apos;s</a>
                 </li>
                 <li><a class="text-base font-bold hover:text-[#3100fb]" href="about.html">About Us</a></li>
                 <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
@@ -91,7 +91,7 @@
         <nav
             class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div class="flex items-center mb-8">
-                <a class="mr-auto text-3xl font-bold leading-none" href="index.html">
+                <a class="mr-auto text-3xl font-bold leading-none" href="./">
                     <img src="assets/socials/logo.png" alt="Janus Logo">
                 </a>
                 <button class="navbar-close">
@@ -140,7 +140,7 @@
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                            href="portfolio/index.html">Portfolio&apos;s</a>
+                            href="portfolio">Portfolio&apos;s</a>
                     </li>
                     <li class="mb-1">
                         <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
@@ -188,27 +188,23 @@
                 </div>
             </div>
             <div class="md:w-3/5">
-                <form class="grid grid-cols-2 gap-8 mt-8">
+                <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST"  class="grid grid-cols-2 gap-8 mt-8">
 
                     <div>
-                        <label for="inputEmail"></label>
-                        <input type="text" class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputFullName"
-                            placeholder="Full Name" />
+                        <input type="text" class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" name="Full Name"
+                            placeholder="Full Name" required/>
                     </div>
                     <div>
-                        <label for="inputEmail"></label>
-                        <input type="email" class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputEmail"
-                            placeholder="E-mail" />
+                        <input type="email" class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" name="Email"
+                            placeholder="E-mail" required/>
                     </div>
                     <div class="col-span-2">
-                        <label for="inputSubject"></label>
-                        <input type="text" class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputSubject"
-                            placeholder="Subject" />
+                        <input type="text" class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" name="Subject"
+                            placeholder="Subject" required/>
                     </div>
                     <div class="col-span-2">
-                        <label for="inputProject"></label>
-                        <textarea class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" id="inputProject" rows="5"
-                            placeholder="Drop us a few lines here..."></textarea>
+                        <textarea class="placeholder-black border-none p-5 w-full bg-[#EEEEEE] text-black" name="Project Details" rows="5"
+                            placeholder="Drop us a few lines here..." required></textarea>
                     </div>
                     <button
                         class="bg-[#3100fb] text-white font-bold rounded-md hover:bg-white hover:text-[#3100fb] hover:border-[#3100fb] border-2 py-4 "

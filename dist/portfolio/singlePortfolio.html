@@ -2,295 +2,525 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janus Technologies | Portfolio </title>
-    <meta name="description" content="" />
-    <link rel="icon" href="../assets/home/small-logo.png" />
-    <link rel="stylesheet" href="../styles.css">
-    <style>
-        @media only screen and (min-width: 768px) {
-            .parent:hover .child {
-                opacity: 1;
-                height: auto;
-                overflow: none;
-                transform: translateY(0);
-            }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janus Technologies | Portfolio </title>
+  <meta name="description" content="" />
+  <link rel="icon" href="../assets/home/small-logo.png" />
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    @media only screen and (min-width: 768px) {
+      .parent:hover .child {
+        opacity: 1;
+        height: auto;
+        overflow: none;
+        transform: translateY(0);
+      }
 
-            .child {
-                opacity: 0;
-                height: 0;
-                overflow: hidden;
-                transform: translateY(-10%);
-            }
-        }
-    </style>
+      .child {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transform: translateY(-10%);
+      }
+    }
+  </style>
 </head>
 
 <navbar>
-    <div class="lg:py-14 lg:px-28 p-10 relative">
-        <nav class="flex justify-between items-center z-1000">
-            <a class="text-3xl font-bold leading-none" href="../index.html">
-                <img src="../assets/socials/logo.png" alt="Janus Logo">
-            </a>
-            <div class="lg:hidden">
-                <button class="navbar-burger flex items-center text-[#3100fb] p-3">
-                    <img src="../assets/socials/menu.png" alt="Janus Logo">
-                </button>
-            </div>
-            <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
-                <li class="text-base font-bold relative parent">
-                    <a href="#" class="flex justify-between md:inline-flex p-4 items-center hover:bg-gray-50 space-x-2">
-                        <span>Service</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
-                            <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-                        </svg>
-                    </a>
-                    <ul
-                        class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
-                        <li>
-                            <a href="services/app-development.html"
-                                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
-                                App development
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services/artificial-intelligence.html"
-                                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
-                                Artificial Intelligence
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services/business-intelligence.html"
-                                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
-                                Business Intelligence
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a class="text-base font-bold hover:text-[#3100fb]"
-                        href="../portfolio/index.html">Portfolio&apos;s</a></li>
-                <li><a class="text-base font-bold hover:text-[#3100fb]" href="../about.html">About Us</a></li>
-                <li><a class="text-base font-bold hover:text-[#3100fb]" href="../contact.html">Let's Talk</a></li>
-                <li class="pl-10 cursor-auto">
-                    <img src="../assets/socials/menu.png" alt="menu bar">
-                </li>
-            </ul>
-        </nav>
-        <div class="hidden md:block mt-4 pl-16">
-            <div class="border-l-2 border-black h-100">
-                <p class="text-base text-black font-bold mb-4 ml-8">App Development | Business Intelligence | Artificial
-                    Inteligence</p>
-            </div>
-        </div>
+  <div class="lg:py-14 lg:px-28 p-10 relative">
+    <nav class="flex justify-between items-center z-10">
+      <a class="text-3xl font-bold leading-none" href="../">
+        <img src="../assets/socials/logo.png" alt="Janus Logo">
+      </a>
+      <div class="lg:hidden">
+        <button class="navbar-burger flex items-center text-[#3100fb] p-3">
+          <img src="../assets/socials/menu.png" alt="Janus Logo">
+        </button>
+      </div>
+      <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-10">
+        <li class="text-base font-bold relative parent">
+          <a class="flex justify-between md:inline-flex p-4 items-center hover:text-[#3100fb] space-x-2">
+            <span>Service</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+              <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+            </svg>
+          </a>
+          <ul
+            class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+            <li>
+              <a href="../services/app-development.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                App development
+              </a>
+            </li>
+            <li>
+              <a href="../services/artificial-intelligence.html"
+                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                Artificial Intelligence
+              </a>
+            </li>
+            <li>
+              <a href="../services/business-intelligence.html"
+                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                Business Intelligence
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="./">Portfolio&apos;s</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="../about.html">About Us</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="../contact.html">Let's Talk</a></li>
+        <li class="pl-10 cursor-auto">
+          <img src="../assets/socials/menu.png" alt="menu bar">
+        </li>
+      </ul>
+    </nav>
+    <div class="hidden md:block mt-4 pl-16">
+      <div class="border-l-2 border-black h-100">
+        <p class="text-base text-black font-bold mb-4 ml-8">App Development | Business Intelligence | Artificial
+          Inteligence</p>
+      </div>
     </div>
+  </div>
 
-    <div class="navbar-menu relative z-50 hidden">
-        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-        <nav
-            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-            <div class="flex items-center mb-8">
-                <a class="mr-auto text-3xl font-bold leading-none" href="../index.html">
-                    <img src="../assets/socials/logo.png" alt="Janus Logo">
-                </a>
-                <button class="navbar-close">
-                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                    </svg>
-                </button>
+  <div class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+      <div class="flex items-center mb-8">
+        <a class="mr-auto text-3xl font-bold leading-none" href="../">
+          <img src="../assets/socials/logo.png" alt="Janus Logo">
+        </a>
+        <button class="navbar-close">
+          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul>
+          <li class="mb-1">
+            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+              href="../about.html">About Us</a>
+          </li>
+          <li class="mb-1">
+            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+              class="flex justify-between md:inline-flex p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded w-full"
+              type="button"><span>Services </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-blue-50 divide-y divide-gray-100 rounded-md shadow w-auto">
+              <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                <li>
+                  <a href="../services/app-development.html"
+                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">App
+                    Development</a>
+                </li>
+                <li>
+                  <a href="../services/artificial-intelligence.html"
+                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Artificial
+                    Intelligence</a>
+                </li>
+                <li>
+                  <a href="../services/business-intelligence.html"
+                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Business
+                    Intelligence</a>
+                </li>
+              </ul>
             </div>
-            <div>
-                <ul>
-                    <li class="mb-1">
-                        <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                            href="../about.html">About Us</a>
-                    </li>
-                    <li class="mb-1">
-                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                            class="flex justify-between md:inline-flex p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded w-full"
-                            type="button"><span>Services </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg></button>
-                        <!-- Dropdown menu -->
-                        <div id="dropdown"
-                            class="z-10 hidden bg-blue-50 divide-y divide-gray-100 rounded-md shadow w-auto">
-                            <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-                                <li>
-                                    <a href="../services/app-development.html"
-                                        class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">App
-                                        Development</a>
-                                </li>
-                                <li>
-                                    <a href="../services/artificial-intelligence.html"
-                                        class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Artificial
-                                        Intelligence</a>
-                                </li>
-                                <li>
-                                    <a href="../services/business-intelligence.html"
-                                        class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Business
-                                        Intelligence</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                            href="../portfolio/index.html">Portfolio&apos;s</a>
-                    </li>
-                    <li class="mb-1">
-                        <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-                            href="../contact.html">Let's Talk</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
+          </li>
+          <li class="mb-1">
+            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+              href="./">Portfolio&apos;s</a>
+          </li>
+          <li class="mb-1">
+            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
+              href="../contact.html">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </navbar>
 
 <body>
-    <!-- portfolio home page -->
-    <section class="bg-cover bg-center h-96 relative"
-        style="background-image: url(../assets/portfolio/portfolio-background2.png);">
-        <h2 class="text-white font-bold text-2xl absolute bottom-0 left-0 mb-8 ml-8">Home/ Portfolio</h2>
-    </section>
-    <section class="lg:p-28 p-10">
-        <div class="flex flex-col justify-center items-center my-4">
-            <h2 class="font-extrabold mb-4">Portfolio</h3>
-                <ul class="flex gap-4 mb-8">
-                    <li><a href="#" class="flex hover:underline text-[#3100fb]">All</a></li>
-                    <li><a href="#" class="flex hover:underline text-[#3100fb]">App Development</a></li>
-                    <li><a href="#" class="flex hover:underline text-[#3100fb]">Artificial Intelligence</a></li>
-                    <li><a href="#" class="flex hover:underline text-[#3100fb]">Business Intelligence</a></li>
-                    <li><a href="#" class="flex hover:underline text-[#3100fb]">Web Design</a></li>
-                    <li><a href="#" class="flex hover:underline text-[#3100fb]">UI/UX</a></li>
-                </ul>
+  <!-- portfolio home page -->
+  <section class="bg-cover bg-center h-96 relative -z-10"
+    style="background-image: url(../assets/portfolio/portfolio-background2.png);">
+    <h2 class="text-white font-bold text-2xl absolute bottom-0 left-0 mb-8 ml-8">Home / Single Portfolio</h2>
+  </section>
+  <section class="lg:p-28 p-10">
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+      <div class="md:flex flex-col col-span-2">
+        <img class="mb-8" src="../assets/portfolio/carousel1.png" alt="carousel 1">
+        <p class="mb-20">Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec ac enim ante. Aliquam eu congue
+          justo, in varius diam fusce tellus. Orci varius natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          ac enim ante. Aliquam eu congue justo, in varius diam fusce
+          tellus.Orci varius natoque penatibus et magnis dis parturient
+          montes, nascetur ridiculus mus. Donec ac enim ante. Aliquam eu
+          congue justo, in varius diam fusce tellus.Orci varius natoque
+          penatibus et magnis dis parturient montes, nascetur ridiculus
+          mus. Donec ac enim ante. Aliquam eu congue justo, in varius
+          diam fusce tellus.Orci varius natoque penatibus et magnis dis
+          parturient montes, nascetur ridiculus mus. Aliquam eu congue
+          justo, in varius diam fusce tellus.Orci varius natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec
+          ac enim ante. Aliquam eu congue justo, in varius diam fusce tellus.
+          Orci varius natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus.
+        </p>
+      </div>
+      <div class="md:flex flex-col items-start">
+        <img class="mb-8" src="../assets/portfolio/chair.png" alt="chair">
+        <div class="">
+          <h3 class="mb-8">Project Details</h3>
+          <div class="mb-20 flex justify-between">
+            <div>
+              <h6 class="text-[#3100fb] text-bold text-sm mb-4">Client</h6>
+              <h6 class="text-[#3100fb] text-bold text-sm mb-4">Category</h6>
+              <h6 class="text-[#3100fb] text-bold text-sm mb-4">Tags</h6>
+              <h6 class="text-[#3100fb] text-bold text-sm mb-4">Duration</h6>
+              <h6 class="text-[#3100fb] text-bold text-sm mb-4">Website</h6>
+            </div>
+            <div>
+              <p class="text-gray-600 text-bold text-sm mb-4">Urban Ladder</p>
+              <p class="text-gray-600 text-bold text-sm mb-4">Development</p>
+              <p class="text-gray-600 text-bold text-sm mb-4">App, UI, UX</p>
+              <p class="text-gray-600 text-bold text-sm mb-4">4 Months</p>
+              <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+                <p class="text-gray-600 text-bold text-sm mb-4">www.urbanclap.com</p>
+              </a>
+            </div>
+          </div>
         </div>
-
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <a href="#"><img src="../assets/portfolio/1.png" alt="menu bar"></a>
-            <a href="#"><img src="../assets/portfolio/2.png" alt="menu bar"></a>
-            <a href="#"><img src="../assets/portfolio/3.png" alt="menu bar"></a>
-            <a href="#"><img src="../assets/portfolio/4.png" alt="menu bar"></a>
-            <a href="#"><img src="../assets/portfolio/5.png" alt="menu bar"></a>
-            <a href="#"><img src="../assets/portfolio/6.png" alt="menu bar"></a>
-        </div>
-    </section>
-
-
-    <div class="bg-[#7857ff]">
-        <div class="flex flex-col justify-around items-center p-20">
-            <h1 class="text-4xl font-bold text-white">Get a Free Consultation</h1>
-            <h4 class="m-4 text-black">
-                Get in touch with us for a free consult on the scope of your project.
-            </h4>
-            <form>
-                <div class="flex space-x-2 text-black w-full">
-                    <div class="">
-                        <div class="mb-2">
-                            <label for="inputFullName"></label>
-                            <input type="text" class="border-none rounded-md py-2 px-3 w-full" id="inputFullName"
-                                placeholder="Full Name" />
-                        </div>
-                        <div>
-                            <label for="inputEmail"></label>
-                            <input type="email" class="border-none rounded-md py-2 px-3 w-full" id="inputEmail"
-                                placeholder="E-mail" />
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="mb-2">
-                            <label for="inputContactNumber"></label>
-                            <input type="tel" class="border-none rounded-md py-2 px-3 w-full" id="inputContactNumber"
-                                placeholder="Contact Number" />
-                        </div>
-                        <div>
-                            <label for="inputLocation"></label>
-                            <input type="text" class="border-none rounded-md py-2 px-3 w-full" id="inputLocation"
-                                placeholder="Location" />
-                        </div>
-                    </div>
-                    <div class="w-2/5">
-                        <label for="inputProject"></label>
-                        <textarea class="border-none rounded-md py-2 px-3 w-full md:w-auto" id="inputProject" rows="3"
-                            placeholder="Briefly tell us about your project"></textarea>
-                    </div>
-                    <div class="">
-                        <div class="mb-2">
-                            <label for="inputBudget"></label>
-                            <select id="inputBudget" class="border-none rounded-md py-2 px-3 w-4/5">
-                                <option disabled selected class="text-gray-500">Budget on your mind</option>
-                                <option>10000</option>
-                                <option>20000</option>
-                                <option>30000</option>
-                                <option>40000</option>
-                            </select>
-                        </div>
-                        <div class="">
-                            <label for="dropzone-file" class="flex px-3 py-2  bg-white rounded-md cursor-pointer">
-                                <p class="mb-2 text-sm"><span class="text-">Upload files</p>
-                                <input id="dropzone-file" type="file" class="hidden" />
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex justify-center">
-                    <submit class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center p-2 md:w-2/5"
-                        type="submit" data-bs-toggle="tooltip" data-bs-title="Default tooltip">
-                        Submit
-                    </submit>
-                </div>
-            </form>
-        </div>
+      </div>
     </div>
+
+
+    <div class="container mx-auto">
+      <div class="flex justify-between my-2">
+        <h3 class="mb-4 text-[#3100fb]">Related Projects</h3>
+        <div>
+          <button class="testimonial-btn previous bg-[#3100fb] text-white rounded-full p-2 shadow-md mr-4">
+            <svg class="w-6 h-6 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M19 12a1 1 0 0 1-1 1H8.414l1.293 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.414l3-3a1 1 0 0 1 1.414 1.414L8.414 11H18a1 1 0 0 1 1 1z"
+                style="fill:#ffffff" data-name="Left" />
+            </svg>
+          </button>
+          <button class="testimonial-btn next bg-[#3100fb] text-white rounded-full p-2 shadow-md">
+            <svg class="w-6 h-6 pointer-events-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="m18.707 12.707-3 3a1 1 0 0 1-1.414-1.414L15.586 13H6a1 1 0 0 1 0-2h9.586l-1.293-1.293a1 1 0 0 1 1.414-1.414l3 3a1 1 0 0 1 0 1.414z"
+                style="fill:#ffffff" data-name="Right" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- card 1 -->
+        <div class="testimonial-card flex flex-col">
+          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+            <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/1.png" alt="/" />
+            <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
+                rel="noopener noreferrer">
+                <h4 class="text-white tracking-wider text-center mt-4">UI / UX, Website Design, Development</h4>
+                <p class="text-white">Air BNB</p>
+              </a>
+            </div>
+          </div>
+          <h4 class="font-extrabold text-center mt-8">Custom Website</h4>
+        </div>
+
+        <!-- card 2 -->
+        <div class="testimonial-card flex flex-col">
+          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+            <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/2.png" alt="/" />
+            <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
+                rel="noopener noreferrer">
+                <h4 class="text-white tracking-wider text-center mt-4">UI / UX, Website Design, Development</h4>
+                <p class="text-white">Air BNB</p>
+              </a>
+            </div>
+          </div>
+          <h4 class="font-extrabold text-center mt-8">Artificial Intelligence</h4>
+        </div>
+
+        <!-- card 3 -->
+        <div class="testimonial-card">
+          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+            <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/3.png" alt="/" />
+            <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
+                rel="noopener noreferrer">
+                <h4 class="text-white tracking-wider text-center mt-4">UI / UX, Website Design, Development</h4>
+                <p class="text-white">Air BNB</p>
+              </a>
+            </div>
+          </div>
+          <h4 class="font-extrabold text-center mt-8">Business Intelligence</h4>
+        </div>
+
+        <!-- card 4 -->
+        <div class="testimonial-card flex flex-col">
+          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+            <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/4.png" alt="/" />
+            <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
+                rel="noopener noreferrer">
+                <h4 class="text-white tracking-wider text-center mt-4">UI / UX, Website Design, Development</h4>
+                <p class="text-white">Air BNB</p>
+              </a>
+            </div>
+          </div>
+          <h4 class="font-extrabold text-center mt-8">App Development</h4>
+        </div>
+
+        <!-- card 5 -->
+        <div class="testimonial-card flex flex-col">
+          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+            <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/5.png" alt="/" />
+            <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
+                rel="noopener noreferrer">
+                <h4 class="text-white tracking-wider text-center mt-4">UI / UX, Website Design, Development</h4>
+                <p class="text-white">Air BNB</p>
+              </a>
+            </div>
+          </div>
+          <h4 class="font-extrabold text-center mt-8">Website Development</h4>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="testimonial-card flex flex-col">
+          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+            <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/6.png" alt="/" />
+            <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+              <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
+                rel="noopener noreferrer">
+                <h4 class="text-white tracking-wider text-center mt-4">UI / UX, Website Design, Development</h4>
+                <p class="text-white">Air BNB</p>
+              </a>
+            </div>
+          </div>
+          <h4 class="font-extrabold text-center mt-8">Software Development</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="hidden md:block bg-[#7857ff]">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class="text-4xl font-bold text-white mt-10 mb-2">Get a Free Consultation</h1>
+      <h4 class="mb-10 text-black">
+        Get in touch with us for a free consult on the scope of your project.
+      </h4>
+      <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST" >
+        <div class="flex space-x-2 text-black w-full">
+          <div class="">
+            <div class="mb-2">
+              <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Full Name"
+                placeholder="Full Name" />
+            </div>
+            <div>
+              <input type="email" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Email"
+                placeholder="E-mail" />
+            </div>
+          </div>
+          <div class="">
+            <div class="mb-2">
+              <input type="tel" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Contact Number"
+                placeholder="Contact Number" />
+            </div>
+            <div>
+              <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Location"
+                placeholder="Location" />
+            </div>
+          </div>
+          <div class="w-2/5">
+            <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full md:w-auto" name="Project Details" rows="3"
+              placeholder="Briefly tell us about your project"></textarea>
+          </div>
+          <div class="">
+            <div class="mb-2">
+              <select name="Budget" class="border-none rounded-md py-2 px-3 w-4/5">
+                <option disabled selected class="text-gray-500">Budget on your mind</option>
+                <option value="10000">10000</option>
+                <option value="20000">20000</option>
+                <option value="30000">30000</option>
+                <option value="40000">40000</option>
+              </select>
+            </div>
+            <div class="">
+              <label for="dropzone-file" class="flex px-3 py-2  bg-white rounded-md cursor-pointer">
+                <p class="mb-2 text-sm"><span class="text-">Upload files</p>
+                <input id="dropzone-file" name="File" type="file" class="hidden" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mb-10">
+          <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center p-2 md:w-2/5" type="submit"
+            data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+            Submit
+        </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- contact section hidden in medium and large view and only shows in mobile view -->
+  <section class="block md:hidden lg:hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2 bg-[#7857ff]">
+      <!-- Form column -->
+      <div class="m-10 md:ml-20 lg:ml-40">
+        <h1 class="text-4xl font-bold text-white">Get a free consultation</h1>
+        <h4 class="mt-4">
+          Get in touch with us for a free consult on the scope of your project.
+        </h4>
+        <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST"
+          class="grid grid-cols-2 gap-4 mt-8">
+          <div>
+            <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Full Name"
+              placeholder="Full Name" />
+          </div>
+          <div>
+            <input type="email" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Email"
+              placeholder="E-mail" />
+          </div>
+          <div>
+            <input type="tel" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Contact Number"
+              placeholder="Contact Number" />
+          </div>
+          <div>
+            <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Location"
+              placeholder="Location" />
+          </div>
+          <div class="col-span-2">
+            <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Message" rows="5"
+              placeholder="Briefly tell us about your project"></textarea>
+          </div>
+          <div class="col-span-2">
+            <select name="Budget" class="border-none rounded-md py-2 px-3 w-full cursor-pointer">
+              <option disabled selected class="text-gray-500">Budget on your mind</option>
+              <option value="10000">10000</option>
+              <option value="20000">20000</option>
+              <option value="30000">30000</option>
+              <option value="40000">40000</option>
+            </select>
+          </div>
+          <div class="col-span-2">
+            <label for="files" class="flex bg-white cursor-pointer border-none rounded-md py-2 px-3 w-auto">Upload
+              files</label>
+            <input class="hidden" type="file" name="files" id="files" />
+          </div>
+          <div class="flex justify-center col-span-2">
+            <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
+              data-bs-toggle="tooltip" data-bs-title="Default tooltip">
+              Submit
+            </button>
+          </div>
+        </form>
+
+      </div>
+
+      <!-- Contact address column -->
+      <div class="bg-[#3100FB] text-white p-16">
+        <h2 class="mb-4">Contact Address</h2>
+        <div class="flex flex-col justify-between content-center">
+          <div class="mb-5">
+            <h1 class="text-xl lg:text-3xl font-bold">USA</h1>
+            <p class="text-sm lg:text-base">
+              5th Avenue<br />
+              7th Cross, Calvin Ridge<br />
+              Taxas-32587<br />
+              Phone: +1885 6785 12
+            </p>
+          </div>
+          <div class="mb-16 lg:flex justify-between">
+            <div class="overflow-x-visible">
+              <h1 class="text-xl lg:text-3xl font-bold">Delhi, India</h1>
+              <p class="text-sm lg:text-base">
+                5th Avenue<br />
+                7th Cross, Calvin Ridge<br />
+                Taxas-32587<br />
+                Phone: +1885 6785 12
+              </p>
+            </div>
+            <div class="mt-10">
+              <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a
+                  href="mailto:hello@janus.com">hello@janus.com</a></h3>
+              <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                  4554</a></h3>
+            </div>
+          </div>
+          <div class="flex">
+            <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/socials/linkedin.svg" alt="linkedin logo" />
+            </a>
+            <a class="text-white mr-2 " href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/socials/youtube.svg" alt="youtube logo" />
+            </a>
+            <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/socials/instagram.svg" alt="instagram logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </body>
 <!-- footer -->
 <footer class="bg-[#333333] text-white py-8">
-    <div class="container mx-auto p-10">
-        <div class="md:flex justify-around">
-            <!-- About column -->
-            <div class="mb-8">
-                <h3 class="mb-4">About Janus</h3>
-                <p class="text-base">Lorem Ipsum is simply dummy text of <br />
-                    the printing and typesetting industry.<br />
-                    Lorem Ipsum has been the industry's<br />
-                    standard dummy text ever since the<br />
-                    1500s.Lorem Ipsum is simply dummy<br />
-                    text of the printing and typesetting</br />
-                    industry. Lorem Ipsum has been the <br />
-                    industry's standard dummy text
-                </p>
-            </div>
+  <div class="container mx-auto p-10">
+    <div class="md:flex justify-around">
+      <!-- About column -->
+      <div class="mb-8">
+        <h3 class="mb-4">About Janus</h3>
+        <p class="text-base">Lorem Ipsum is simply dummy text of <br />
+          the printing and typesetting industry.<br />
+          Lorem Ipsum has been the industry's<br />
+          standard dummy text ever since the<br />
+          1500s.Lorem Ipsum is simply dummy<br />
+          text of the printing and typesetting</br />
+          industry. Lorem Ipsum has been the <br />
+          industry's standard dummy text
+        </p>
+      </div>
 
-            <!-- Links column -->
-            <div class="mb-8">
-                <h3 class="mb-4">Quick Links</h3>
-                <ul class="text-md">
-                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Services</a></li>
-                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Blog</a></li>
-                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Contact</a></li>
-                    <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">About</a></li>
-                </ul>
-            </div>
+      <!-- Links column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Quick Links</h3>
+        <ul class="text-md">
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Services</a></li>
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Blog</a></li>
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Contact</a></li>
+          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">About</a></li>
+        </ul>
+      </div>
 
-            <!-- Contacts column -->
-            <div class="mb-8">
-                <h3 class="mb-4">Contacts</h3>
-                <p class="text-base">5th Avenue<br />
-                    7th Cross, Calvin Ridge<br />
-                    Taxas-32587<br />
-                    Phone : + 1885 6785 12</p>
-                <p class="text-base my-4">hello@janus.com</p>
-                <p class="text-base">+91 8856 34 4554</p>
-            </div>
-        </div>
+      <!-- Contacts column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Contacts</h3>
+        <p class="text-base">5th Avenue<br />
+          7th Cross, Calvin Ridge<br />
+          Taxas-32587<br />
+          Phone : + 1885 6785 12</p>
+        <p class="text-base my-4">hello@janus.com</p>
+        <p class="text-base">+91 8856 34 4554</p>
+      </div>
     </div>
+  </div>
 </footer>
 <script src="../script.js"></script>
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>

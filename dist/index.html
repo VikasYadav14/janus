@@ -31,7 +31,7 @@
 <navbar>
   <div class="lg:py-14 lg:px-28 p-10 relative">
     <nav class="flex justify-between items-center z-10">
-      <a class="text-3xl font-bold leading-none" href="index.html">
+      <a class="text-3xl font-bold leading-none" href="./">
         <img src="assets/socials/logo.png" alt="Janus Logo">
       </a>
       <div class="lg:hidden">
@@ -68,7 +68,7 @@
             </li>
           </ul>
         </li>
-        <li><a class="text-base font-bold hover:text-[#3100fb]" href="portfolio/index.html">Portfolio&apos;s</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="portfolio">Portfolio&apos;s</a></li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="about.html">About Us</a></li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
         <li class="pl-10 cursor-auto">
@@ -88,7 +88,7 @@
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
     <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
       <div class="flex items-center mb-8">
-        <a class="mr-auto text-3xl font-bold leading-none" href="index.html">
+        <a class="mr-auto text-3xl font-bold leading-none" href="./">
           <img src="assets/socials/logo.png" alt="Janus Logo">
         </a>
         <button class="navbar-close">
@@ -135,7 +135,7 @@
           </li>
           <li class="mb-1">
             <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-              href="portfolio/index.html">Portfolio&apos;s</a>
+              href="portfolio/">Portfolio&apos;s</a>
           </li>
           <li class="mb-1">
             <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
@@ -477,46 +477,46 @@
       <h4 class="mt-4">
         Get in touch with us for a free consult on the scope of your project.
       </h4>
-      <form class="grid grid-cols-2 gap-4 mt-8">
+      <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST" class="grid grid-cols-2 gap-4 mt-8">
         <div>
-          <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputFullName"
-            placeholder="Full Name" />
+          <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Full Name"
+            placeholder="Full Name" required/>
         </div>
         <div>
-          <input type="email" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputEmail"
-            placeholder="E-mail" />
+          <input type="email" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Email"
+            placeholder="E-mail" required/>
         </div>
         <div>
-          <input type="tel" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputContactNumber"
-            placeholder="Contact Number" />
+          <input type="tel" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Contact Number"
+            placeholder="Contact Number" required/>
         </div>
         <div>
-          <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputLocation"
-            placeholder="Location" />
+          <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Location"
+            placeholder="Location" required/>
         </div>
         <div class="col-span-2">
-          <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full" id="inputProject" rows="5"
+          <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Project Details" rows="5"
             placeholder="Briefly tell us about your project"></textarea>
         </div>
         <div class="col-span-2">
-          <select id="inputBudget" class="border-none rounded-md py-2 px-3 w-full cursor-pointer">
+          <select name="Budget" required class="border-none rounded-md py-2 px-3 w-full cursor-pointer">
             <option disabled selected class="text-gray-500">Budget on your mind</option>
-            <option class="">10000</option>
-            <option>20000</option>
-            <option>30000</option>
-            <option>40000</option>
+            <option value="10000">10000</option>
+            <option value="20000">20000</option>
+            <option value="30000">30000</option>
+            <option value="40000">40000</option>
           </select>
         </div>
         <div class="col-span-2">
-          <label for="inputFile" class="flex bg-white cursor-pointer border-none rounded-md py-2 px-3 w-auto">Upload
+          <label for="files" class="flex bg-white cursor-pointer border-none rounded-md py-2 px-3 w-auto">Upload
             files</label>
-          <input class="hidden" type="file" id="inputFile" />
+          <input class="hidden" type="file" name="files" id="files" required/>
         </div>
         <div class="flex justify-center col-span-2">
-          <div class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
+          <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
             data-bs-toggle="tooltip" data-bs-title="Default tooltip">
             Submit
-          </div>
+        </button>
         </div>
       </form>
 
