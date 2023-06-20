@@ -10,24 +10,23 @@
   <link rel="icon" href="assets/home/small-logo.png" />
   <link rel="stylesheet" href="styles.css">
   <style>
-    @media only screen and (min-width: 768px) {
-      .parent:hover .child {
-        opacity: 1;
-        height: auto;
-        overflow: none;
-        transform: translateY(0);
-      }
+    .parent:hover .child {
+      opacity: 1;
+      height: auto;
+      overflow: none;
+      transform: translateY(0);
+    }
 
-      .child {
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-        transform: translateY(-10%);
-      }
+    .child {
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transform: translateY(-10%);
     }
   </style>
 </head>
 
+<!-- Navbar Section Start -->
 <navbar>
   <div class="lg:py-7 lg:px-20 p-8 relative">
     <nav class="flex justify-between items-center z-10">
@@ -70,12 +69,13 @@
         </li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="portfolio">Portfolio&apos;s</a></li>
         <li><a class="text-base font-bold hover:text-[#3100fb]" href="about.html">About Us</a></li>
-        <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Let's Talk</a></li>
+        <li><a class="text-base font-bold hover:text-[#3100fb]" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
     <div class="hidden md:block mt-4 pl-16">
       <div class="border-l-2 border-black h-100">
-        <p class="text-base text-black font-bold mb-4 ml-8">App Development | Artificial Inteligence | Business Intelligence</p>
+        <p class="text-base text-black font-bold mb-4 ml-8">App Development | Artificial Inteligence | Business
+          Intelligence</p>
       </div>
     </div>
   </div>
@@ -135,7 +135,7 @@
           </li>
           <li class="mb-1">
             <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-              href="contact.html">Let's Talk</a>
+              href="contact.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -473,22 +473,23 @@
       <h4 class="mt-4">
         Get in touch with us for a free consult on the scope of your project.
       </h4>
-      <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST" class="grid grid-cols-2 gap-4 mt-8">
+      <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST"
+        class="grid grid-cols-2 gap-4 mt-8">
         <div>
           <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Full Name"
-            placeholder="Full Name" required/>
+            placeholder="Full Name" required />
         </div>
         <div>
           <input type="email" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Email"
-            placeholder="E-mail" required/>
+            placeholder="E-mail" required />
         </div>
         <div>
           <input type="tel" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Contact Number"
-            placeholder="Contact Number" required/>
+            placeholder="Contact Number" required />
         </div>
         <div>
           <input type="text" class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Location"
-            placeholder="Location" required/>
+            placeholder="Location" required />
         </div>
         <div class="col-span-2">
           <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full" name="Project Details" rows="5"
@@ -506,13 +507,13 @@
         <div class="col-span-2">
           <label for="files" class="flex bg-white cursor-pointer border-none rounded-md py-2 px-3 w-auto">Upload
             files</label>
-          <input class="hidden" type="file" name="files" id="files" required/>
+          <input class="hidden" type="file" name="files" id="files" required />
         </div>
         <div class="flex justify-center col-span-2">
           <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-full p-2" type="submit"
             data-bs-toggle="tooltip" data-bs-title="Default tooltip">
             Submit
-        </button>
+          </button>
         </div>
       </form>
 
@@ -585,10 +586,34 @@
       <div class="mb-8">
         <h3 class="mb-4">Quick Links</h3>
         <ul class="text-md">
-          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Services</a></li>
-          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Blog</a></li>
-          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Contact</a></li>
-          <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">About</a></li>
+          <li class="relative parent mb-2">
+            <a class="hover:text-blue-500 hover:underline">
+              Services
+            </a>
+            <ul
+              class="child transition duration-300 absolute top-0 left-24 md:w-48 border-2 border-gray-500 md:rounded-r ">
+              <li>
+                <a href="services/app-development.html" class="flex px-4 py-3 hover:text-blue-500 hover:underline">
+                  App development
+                </a>
+              </li>
+              <li>
+                <a href="services/artificial-intelligence.html"
+                  class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
+                  Artificial Intelligence
+                </a>
+              </li>
+              <li>
+                <a href="services/business-intelligence.html"
+                  class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
+                  Business Intelligence
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="#">Blog</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="./contact.html">Contact Us</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="./about.html">About Us</a></li>
         </ul>
       </div>
 

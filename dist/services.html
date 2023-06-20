@@ -10,7 +10,6 @@
   <link rel="icon" href="assets/home/small-logo.png" />
   <link rel="stylesheet" href="styles.css">
   <style>
-    @media only screen and (min-width: 768px) {
       .parent:hover .child {
         opacity: 1;
         height: auto;
@@ -24,7 +23,6 @@
         overflow: hidden;
         transform: translateY(-10%);
       }
-    }
   </style>
 </head>
 
@@ -494,45 +492,69 @@
 </body>
 <!-- footer -->
 <footer class="bg-[#333333] text-white py-8">
-    <div class="container mx-auto p-10 text-center">
-      <div class="md:flex justify-around">
-        <!-- About column -->
-        <div class="mb-8">
-          <h3 class="mb-4">About Janus</h3>
-          <p class="text-sm">Lorem Ipsum is simply dummy text of <br />
-            the printing and typesetting industry.<br />
-            Lorem Ipsum has been the industry's<br />
-            standard dummy text ever since the<br />
-            1500s.Lorem Ipsum is simply dummy<br />
-            text of the printing and typesetting</br />
-            industry. Lorem Ipsum has been the <br />
-            industry's standard dummy text
-          </p>
-        </div>
-  
-        <!-- Links column -->
-        <div class="mb-8">
-          <h3 class="mb-4">Quick Links</h3>
-          <ul class="text-md">
-            <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Services</a></li>
-            <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Blog</a></li>
-            <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">Contact</a></li>
-            <li class="hover:text-blue-500 hover:text-lg hover:underline mb-2"><a href="#">About</a></li>
-          </ul>
-        </div>
-  
-        <!-- Contacts column -->
-        <div class="mb-8">
-          <h3 class="mb-4">Contacts</h3>
-          <p class="text-lg">5th Avenue<br />
-            7th Cross, Calvin Ridge<br />
-            Taxas-32587<br />
-            Phone : + 1885 6785 12</p>
-          <p class="text-sm my-4">hello@janus.com</p>
-          <p class="text-sm">+91 8856 34 4554</p>
-        </div>
+  <div class="container mx-auto p-10">
+    <div class="md:flex justify-between">
+      <!-- About column -->
+      <div class="mb-8">
+        <h3 class="mb-4">About Janus</h3>
+        <p class="text-base">Lorem Ipsum is simply dummy text of <br />
+          the printing and typesetting industry.<br />
+          Lorem Ipsum has been the industry's<br />
+          standard dummy text ever since the<br />
+          1500s.Lorem Ipsum is simply dummy<br />
+          text of the printing and typesetting</br />
+          industry. Lorem Ipsum has been the <br />
+          industry's standard dummy text
+        </p>
+      </div>
+
+      <!-- Links column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Quick Links</h3>
+        <ul class="text-md">
+          <li class="relative parent mb-2">
+            <a class="hover:text-blue-500 hover:underline">
+              Services
+            </a>
+            <ul
+              class="hidden md:block child transition duration-300 absolute top-0 left-24 md:w-48 border-2 border-gray-500 md:rounded-r ">
+              <li>
+                <a href="app-development.html" class="flex px-4 py-3 hover:text-blue-500 hover:underline">
+                  App development
+                </a>
+              </li>
+              <li>
+                <a href="artificial-intelligence.html"
+                  class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
+                  Artificial Intelligence
+                </a>
+              </li>
+              <li>
+                <a href="business-intelligence.html"
+                  class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
+                  Business Intelligence
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="#">Blog</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="../contact.html">Contact Us</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="../about.html">About Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contacts column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Contacts</h3>
+        <p class="text-base">5th Avenue<br />
+          7th Cross, Calvin Ridge<br />
+          Taxas-32587<br />
+          Phone : + 1885 6785 12</p>
+        <p class="text-base my-4">hello@janus.com</p>
+        <p class="text-base">+91 8856 34 4554</p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
   <script src="script.js"></script>
   </html>
