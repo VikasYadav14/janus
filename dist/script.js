@@ -123,7 +123,7 @@ function type() {
       isDeleting = true;
     }
   }
-  setTimeout(type, 100);
+  setTimeout(type, 200);
 }
 
 type();

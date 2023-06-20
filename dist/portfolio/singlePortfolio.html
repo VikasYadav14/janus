@@ -145,10 +145,10 @@
 
 <body>
   <!-- portfolio home page -->
-  <section class="bg-cover bg-center h-96 relative -z-10"
+  <div class="bg-cover bg-center h-48 lg:h-96 relative -z-10"
     style="background-image: url(../assets/portfolio/portfolio-background2.png);">
-    <h2 class="text-white font-bold text-2xl absolute bottom-0 left-0 mb-8 ml-8">Home / Single Portfolio</h2>
-  </section>
+    <h3 class="text-white absolute bottom-0 left-0 mb-4 md:mb-8 ml-4 md:ml-8">Home / Single Portfolio</h3>
+  </div>
   <section class="lg:p-28 p-10">
     <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
       <div class="md:flex flex-col col-span-2">
@@ -222,7 +222,8 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- card 1 -->
         <div class="testimonial-card flex flex-col">
-          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+          <div
+            class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
             <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/1.png" alt="/" />
             <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
@@ -237,7 +238,8 @@
 
         <!-- card 2 -->
         <div class="testimonial-card flex flex-col">
-          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+          <div
+            class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
             <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/2.png" alt="/" />
             <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
@@ -252,7 +254,8 @@
 
         <!-- card 3 -->
         <div class="testimonial-card">
-          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+          <div
+            class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
             <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/3.png" alt="/" />
             <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
@@ -267,7 +270,8 @@
 
         <!-- card 4 -->
         <div class="testimonial-card flex flex-col">
-          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+          <div
+            class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
             <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/4.png" alt="/" />
             <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
@@ -282,7 +286,8 @@
 
         <!-- card 5 -->
         <div class="testimonial-card flex flex-col">
-          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+          <div
+            class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
             <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/5.png" alt="/" />
             <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
@@ -297,7 +302,8 @@
 
         <!-- Card 6 -->
         <div class="testimonial-card flex flex-col">
-          <div class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
+          <div
+            class="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-[#3100fb]">
             <img class="rounded-xl group-hover:opacity-20 w-full" src="../assets/portfolio/6.png" alt="/" />
             <div class="hidden group-hover:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <a class="flex flex-col items-center" href="./singlePortfolio.html" target="_blank"
@@ -320,7 +326,7 @@
       <h4 class="mb-10 text-black">
         Get in touch with us for a free consult on the scope of your project.
       </h4>
-      <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST" >
+      <form form action="https://getform.io/f/7e7c75df-c50c-4973-a22d-a321427d8836" method="POST">
         <div class="flex space-x-2 text-black w-full">
           <div class="">
             <div class="mb-2">
@@ -343,8 +349,8 @@
             </div>
           </div>
           <div class="w-2/5">
-            <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full md:w-auto" name="Project Details" rows="3"
-              placeholder="Briefly tell us about your project"></textarea>
+            <textarea class="placeholder-black border-none rounded-md py-2 px-3 w-full md:w-auto" name="Project Details"
+              rows="3" placeholder="Briefly tell us about your project"></textarea>
           </div>
           <div class="">
             <div class="mb-2">
@@ -368,7 +374,7 @@
           <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center p-2 md:w-2/5" type="submit"
             data-bs-toggle="tooltip" data-bs-title="Default tooltip">
             Submit
-        </button>
+          </button>
         </div>
       </form>
     </div>
