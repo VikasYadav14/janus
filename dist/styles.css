@@ -422,6 +422,12 @@ video {
   display: none;
 }
 
+body {
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
@@ -875,10 +881,6 @@ li {
   height: auto;
 }
 
-.min-h-full {
-  min-height: 100%;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -947,6 +949,20 @@ li {
 
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes blink {
+  from {
+    border-right-color: transparent;
+  }
+
+  to {
+    border-right-color: [#3100fb];
+  }
+}
+
+.animate-typing {
+  animation: typing 2s steps(14), blink .5s infinite;
 }
 
 .cursor-auto {
@@ -1094,6 +1110,10 @@ li {
   border-right-width: 1px;
 }
 
+.border-r-4 {
+  border-right-width: 4px;
+}
+
 .border-none {
   border-style: none;
 }
@@ -1171,16 +1191,6 @@ li {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
 .bg-\[linear-gradient\(185deg\2c _\#3100fb_50\%\2c _\#F5F5F5_50\%\)\] {
@@ -1304,8 +1314,8 @@ li {
   padding-bottom: 2rem;
 }
 
-.pb-28 {
-  padding-bottom: 7rem;
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .pl-10 {
@@ -1322,10 +1332,6 @@ li {
 
 .pt-1 {
   padding-top: 0.25rem;
-}
-
-.pt-2 {
-  padding-top: 0.5rem;
 }
 
 .pt-1\.5 {
@@ -1448,14 +1454,6 @@ li {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#3100\] {
-  color: #3100;
 }
 
 .placeholder-black::-moz-placeholder {
@@ -1696,6 +1694,11 @@ html {
     padding-right: 5rem;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
@@ -1775,6 +1778,12 @@ html {
     margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .lg\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .lg\:space-y-96 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(24rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1793,6 +1802,11 @@ html {
     padding: 2rem;
   }
 
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
   .lg\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -1801,6 +1815,11 @@ html {
   .lg\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .lg\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
   }
 
   .lg\:text-2xl {
