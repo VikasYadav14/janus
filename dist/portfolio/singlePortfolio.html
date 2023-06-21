@@ -81,63 +81,95 @@
   </div>
 
   <div class="navbar-menu relative z-50 hidden">
-    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-    <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-      <div class="flex items-center mb-8">
-        <a class="mr-auto text-3xl font-bold leading-none" href="../">
-          <img src="../assets/socials/logo.png" alt="Janus Logo">
-        </a>
-        <button class="navbar-close">
-          <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
-            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-            </path>
-          </svg>
-        </button>
+    <nav
+      class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm bg-[#3100fb] border-r overflow-y-auto text-white">
+      <div class="flex-1 bg-[#333333] p-6">
+        <div class="flex items-center mb-8">
+          <a class="mr-auto text-3xl font-bold leading-none" href="../">
+            <img src="../assets/socials/logo1.png" alt="Janus Logo">
+          </a>
+          <button class="navbar-close">
+            <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <hr>
+        <div class="">
+          <ul>
+            <li class="mb-1">
+              <a class="block p-4 text-base font-semibold 0 hover:text-blue-500 rounded" href="../about.html">About
+                Us</a>
+            </li>
+            <li class="mb-1">
+              <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                class="flex justify-between md:inline-flex p-4 text-base font-semibold hover:bg hover:text-blue-500 rounded w-full"
+                type="button"><span>Services </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg></button>
+              <!-- Dropdown menu -->
+              <div id="dropdown"
+                class="z-10 hidden bg-[#333333] border-2 rounded-md divide-y divide-gray-100 shadow w-5/6">
+                <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="../services/app-development.html"
+                      class="block p-4 text-base font-semibold hover:text-blue-500 rounded">App
+                      Development</a>
+                  </li>
+                  <li>
+                    <a href="../services/artificial-intelligence.html"
+                      class="block p-4 text-base font-semibold hover:text-blue-500 rounded">Artificial
+                      Intelligence</a>
+                  </li>
+                  <li>
+                    <a href="../services/business-intelligence.html"
+                      class="block p-4 text-base font-semibold hover:text-blue-500 rounded">Business
+                      Intelligence</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-base font-semibold 0 hover:text-blue-500 rounded" href="./">Portfolio&apos;s</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-base font-semibold 0 hover:text-blue-500 rounded" href="#">Blog</a>
+            </li>
+            <li class="mb-1">
+              <a class="block p-4 text-base font-semibold 0 hover:text-blue-500 rounded" href="#">Join Our Team</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <ul>
-          <li class="mb-1">
-            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-              href="../about.html">About Us</a>
-          </li>
-          <li class="mb-1">
-            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-              class="flex justify-between md:inline-flex p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded w-full"
-              type="button"><span>Services </span><svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none"
-                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-              </svg></button>
-            <!-- Dropdown menu -->
-            <div id="dropdown" class="z-10 hidden bg-blue-50 divide-y divide-gray-100 rounded-md shadow w-auto">
-              <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-                <li>
-                  <a href="../services/app-development.html"
-                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">App
-                    Development</a>
-                </li>
-                <li>
-                  <a href="../services/artificial-intelligence.html"
-                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Artificial
-                    Intelligence</a>
-                </li>
-                <li>
-                  <a href="../services/business-intelligence.html"
-                    class="block p-4 text-base font-semibold hover:bg-white hover:text-[#3100fb] rounded">Business
-                    Intelligence</a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="mb-1">
-            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-              href="./">Portfolio&apos;s</a>
-          </li>
-          <li class="mb-1">
-            <a class="block p-4 text-base font-semibold hover:bg-blue-50 hover:text-[#3100fb] rounded"
-              href="../contact.html">Contact Us</a>
-          </li>
-        </ul>
+      <div class="bg-[#3100FB] text-white p-10">
+        <a href="../contact.html"><h2 class="mb-4">Contact</h2></a>
+        <div class="flex flex-col justify-around content-center">
+          <p class="mb-8">
+            5th Avenue<br />
+            7th Cross, Calvin Ridge<br />
+            Taxas-32587<br />
+            Phone: +1885 6785 12
+          </p>
+          <div class="mb-8">
+            <h3 class="text-xl font-bold hover:text-gray-400"><a href="mailto:hello@janus.com">hello@janus.com</a></h3>
+            <h3 class="text-xl lg:text-2xl font-bold hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                4554</a></h3>
+          </div>
+          <div class="flex">
+            <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/socials/linkedin.svg" alt="linkedin logo" />
+            </a>
+            <a class="text-white mr-2 " href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/socials/youtube.svg" alt="youtube logo" />
+            </a>
+            <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
+              <img src="../assets/socials/instagram.svg" alt="instagram logo" />
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
@@ -150,7 +182,7 @@
     <h3 class="text-white absolute bottom-0 left-0 mb-4 md:mb-8 ml-4 md:ml-8">Home / Single Portfolio</h3>
   </div>
   <section class="lg:p-28 p-10">
-    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+    <div class="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10">
       <div class="md:flex flex-col col-span-2">
         <img class="mb-8" src="../assets/portfolio/carousel1.png" alt="carousel 1">
         <p class="mb-20">Orci varius natoque penatibus et magnis dis parturient montes,
