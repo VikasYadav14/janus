@@ -1,3 +1,11 @@
+// google reCAPTCHA
+grecaptcha.ready(function() {
+  grecaptcha.execute("6LdlG8YmAAAAAHn7IaOetjvTqulE42vgHzpoJWOG")
+  .then(function(token) {document.getElementById('captchaResponse').value = token;
+  });
+});
+
+// cards slider for testimonial and related articles
 document.addEventListener('DOMContentLoaded', function() {
   const testimonialCards = Array.from(document.querySelectorAll('.testimonial-card'));
   const testimonialBtns = document.querySelectorAll('.testimonial-btn');
@@ -98,6 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+// Home page worder changer with Writable
 const words = ['  App Development     ', '  Artificial Intelligence     ','  Business Intelligence     '];
 let i = 0;
 let j = 0;
