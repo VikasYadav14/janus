@@ -1172,11 +1172,6 @@ li {
   background-color: rgb(211 239 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1363,10 +1358,6 @@ li {
   text-transform: uppercase;
 }
 
-.leading-none {
-  line-height: 1;
-}
-
 .leading-snug {
   line-height: 1.375;
 }
@@ -1387,6 +1378,11 @@ li {
 .text-\[\#7857ff\] {
   --tw-text-opacity: 1;
   color: rgb(120 87 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {

@@ -136,3 +136,10 @@ function type() {
 }
 
 type();
+
+
+function displayFileName(fileInputId, fileNameId) {
+  var fileInput = document.getElementById(fileInputId);
+  var fileNameLabel = document.getElementById(fileNameId);
+  fileNameLabel.textContent = fileInput.files[0].name;
+}

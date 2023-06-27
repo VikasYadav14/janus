@@ -31,173 +31,168 @@
 <!-- Navbar Section Start -->
 <navbar>
     <div class="lg:py-7 lg:px-20 p-8 relative">
-        <nav class="flex justify-between items-center z-10">
-            <a href="./">
-                <img src="assets/socials/logo.png" alt="Janus Logo">
-            </a>
-            <div class="lg:hidden">
-                <button class="navbar-burger flex items-center text-[#3100fb] p-3">
-                    <img src="assets/socials/menu.png" alt="Janus Logo">
-                </button>
-            </div>
-            <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-8">
-                <li class=" relative parent">
-                    <a class="flex justify-between md:inline-flex items-center hover:text-[#3100fb] space-x-2">
-                        <span>Services</span><svg width="8" height="6" viewBox="0 0 8 6" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path id="Vector 1"
-                                d="M1.09822 0H6.8279C7.68191 0 8.14294 1.00141 7.58764 1.65023L4.64537 5.08804C4.23923 5.56259 3.50226 5.55279 3.10888 5.06761L0.321461 1.6298C-0.208555 0.976116 0.256657 0 1.09822 0Z"
-                                fill="#3100FB" />
-                        </svg>
-                    </a>
-                    <ul
-                        class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
-                        <li>
-                            <a href="services_app-development.html"
-                                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
-                                App development
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services_artificial-intelligence.html"
-                                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
-                                Artificial Intelligence
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services_business-intelligence.html"
-                                class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
-                                Business Intelligence
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a class=" hover:text-[#3100fb]" href="portfolio">Portfolio&apos;s</a></li>
-                <li><a class=" hover:text-[#3100fb]" href="about.html">About Us</a></li>
-                <li><a class=" hover:text-[#3100fb]" href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="hidden md:block mt-4 pl-16">
-            <div class="border-l-2 border-black h-100">
-                <p class="mb-4 ml-8">App Development | Artificial Inteligence | Business
-                    Intelligence</p>
-            </div>
+      <nav class="flex justify-between items-center z-10">
+        <a href="/dist">
+          <img src="/dist/assets/socials/logo.png" alt="Janus Logo">
+        </a>
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-[#3100fb] p-3">
+            <img src="/dist/assets/socials/menu.png" alt="Janus Logo">
+          </button>
         </div>
-    </div>
-
-    <div class="navbar-menu relative z-50 hidden">
-        <nav
-            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm bg-[#3100fb] border-r overflow-y-auto text-white">
-            <div class="flex-1 bg-[#333333] p-6">
-                <div class="flex items-center mb-8">
-                    <a class="mr-auto leading-none" href="./">
-                        <img src="assets/socials/logo1.png" alt="Janus Logo">
-                    </a>
-                    <button class="navbar-close">
-                        <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M6 18L18 6M6 6l12 12">
-                            </path>
-                        </svg>
-                    </button>
-                </div>
-                <hr>
-                <div>
-                    <ul>
-                        <li class="mb-1">
-                            <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="about.html">About
-                                Us</a>
-                        </li>
-                        <li class="mb-1">
-                            <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
-                                class="inline-flex p-4 font-semibold items-center hover:bg hover:text-blue-500 rounded w-full space-x-2"
-                                type="button"><span>Services</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1"
-                                    viewBox="0 0 24 24">
-                                    <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-                                </svg>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div id="dropdown"
-                                class="z-10 hidden bg-[#333333] border-2 rounded-md divide-y divide-gray-100 shadow w-5/6">
-                                <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
-                                    <li>
-                                        <a href="services_app-development.html"
-                                            class="block p-4 font-semibold hover:text-blue-500 rounded">App
-                                            Development</a>
-                                    </li>
-                                    <li>
-                                        <a href="services_artificial-intelligence.html"
-                                            class="block p-4 font-semibold hover:text-blue-500 rounded">Artificial
-                                            Intelligence</a>
-                                    </li>
-                                    <li>
-                                        <a href="services_business-intelligence.html"
-                                            class="block p-4 font-semibold hover:text-blue-500 rounded">Business
-                                            Intelligence</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded"
-                                href="portfolio/">Portfolio&apos;s</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="#">Blog</a>
-                        </li>
-                        <li class="mb-1">
-                            <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="#">Join Our
-                                Team</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="bg-[#3100FB] text-white p-10">
-                <a href="contact.html">
-                    <h2 class="mb-4">Contact</h2>
+        <ul class="hidden lg:flex lg:items-center lg:w-auto lg:space-x-8">
+          <li class="relative parent">
+            <a class="flex justify-between md:inline-flex items-center hover:text-[#3100fb] space-x-2">
+              <span>Services</span><svg width="8" height="6" viewBox="0 0 8 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector 1"
+                  d="M1.09822 0H6.8279C7.68191 0 8.14294 1.00141 7.58764 1.65023L4.64537 5.08804C4.23923 5.56259 3.50226 5.55279 3.10888 5.06761L0.321461 1.6298C-0.208555 0.976116 0.256657 0 1.09822 0Z"
+                  fill="#3100FB" />
+              </svg>
+            </a>
+            <ul
+              class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
+              <li>
+                <a href="/dist/services_app-development.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+                  App development
                 </a>
-                <div class="flex flex-col justify-around content-center">
-                    <p>5th Avenue</p>
-                    <p>7th Cross, Calvin Ridge</p>
-                    <p>Taxas-32587</p>
-                    <p class="mb-8">Phone: +1885 6785 12</p>
-                    <div class="mb-8">
-                        <h3 class="hover:text-gray-400"><a href="mailto:hello@janus.com">hello@janus.com</a></h3>
-                        <h3 class="hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
-                                4554</a></h3>
-                    </div>
-                    <div class="flex">
-                        <a class="text-white mr-2" href="https://www.example.com" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="assets/socials/linkedin.svg" alt="linkedin logo" />
-                        </a>
-                        <a class="text-white mr-2 " href="https://www.example.com" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="assets/socials/youtube.svg" alt="youtube logo" />
-                        </a>
-                        <a class="text-white mr-2" href="https://www.example.com" target="_blank"
-                            rel="noopener noreferrer">
-                            <img src="assets/socials/instagram.svg" alt="instagram logo" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
+              </li>
+              <li>
+                <a href="/dist/services_artificial-intelligence.html"
+                  class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                  Artificial Intelligence
+                </a>
+              </li>
+              <li>
+                <a href="/dist/services_business-intelligence.html"
+                  class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
+                  Business Intelligence
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="hover:text-[#3100fb]" href="/dist/portfolio">Portfolio&apos;s</a></li>
+          <li><a class="hover:text-[#3100fb]" href="/dist/about.html">About Us</a></li>
+          <li><a class="hover:text-[#3100fb]" href="/dist/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="hidden md:block mt-4 pl-16">
+        <div class="border-l-2 border-black h-100">
+          <p class="text-black mb-4 ml-8">App Development | Artificial Inteligence | Business
+            Intelligence</p>
+        </div>
+      </div>
     </div>
-</navbar>
+  
+    <div class="navbar-menu relative z-50 hidden">
+      <nav
+        class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm bg-[#3100fb] border-r overflow-y-auto text-white">
+        <div class="flex-1 bg-[#333333] p-6">
+          <div class="flex items-center mb-8">
+            <a class="mr-auto" href="/dist">
+              <img src="/dist/assets/socials/logo1.png" alt="Janus Logo">
+            </a>
+            <button class="navbar-close">
+              <svg class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                </path>
+              </svg>
+            </button>
+          </div>
+          <hr>
+          <div class="">
+            <ul>
+              <li class="mb-1">
+                <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="/dist/about.html">About
+                  Us</a>
+              </li>
+              <li class="mb-1">
+                <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                  class="inline-flex p-4 font-semibold items-center hover:bg hover:text-blue-500 rounded w-full space-x-2"
+                  type="button"><span>Services</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                    <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown"
+                  class="z-10 hidden bg-[#333333] border-2 rounded-md divide-y divide-gray-100 shadow w-5/6">
+                  <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
+                    <li>
+                      <a href="/dist/services_app-development.html"
+                        class="block p-4 font-semibold hover:text-blue-500 rounded">App
+                        Development</a>
+                    </li>
+                    <li>
+                      <a href="/dist/services_artificial-intelligence.html"
+                        class="block p-4 font-semibold hover:text-blue-500 rounded">Artificial
+                        Intelligence</a>
+                    </li>
+                    <li>
+                      <a href="/dist/services_business-intelligence.html"
+                        class="block p-4 font-semibold hover:text-blue-500 rounded">Business
+                        Intelligence</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="/dist/portfolio">Portfolio&apos;s</a>
+              </li>
+              <li class="mb-1">
+                <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="#">Blog</a>
+              </li>
+              <li class="mb-1">
+                <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="#">Join Our Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-[#3100FB] text-white p-10">
+          <a href="/dist/contact.html">
+            <h2 class="mb-4">Contact</h2>
+          </a>
+          <div class="flex flex-col justify-around content-center">
+            <p class="mb-8">
+              5th Avenue<br />
+              7th Cross, Calvin Ridge<br />
+              Taxas-32587<br />
+              Phone: +1885 6785 12
+            </p>
+            <div class="mb-8">
+              <h3 class="hover:text-gray-400"><a href="mailto:hello@janus.com">hello@janus.com</a></h3>
+              <h3 class="hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                  4554</a></h3>
+            </div>
+            <div class="flex">
+              <a class="text-white mr-2" href="https://www.example.com" rel="noopener noreferrer">
+                <img src="/dist/assets/socials/linkedin.svg" alt="linkedin logo" />
+              </a>
+              <a class="text-white mr-2 " href="https://www.example.com" rel="noopener noreferrer">
+                <img src="/dist/assets/socials/youtube.svg" alt="youtube logo" />
+              </a>
+              <a class="text-white mr-2" href="https://www.example.com" rel="noopener noreferrer">
+                <img src="/dist/assets/socials/instagram.svg" alt="instagram logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </navbar>
 
 <body>
     <div class="bg-cover bg-center h-36 lg:h-72 relative -z-10"
-        style="background-image: url(assets/services/services_background.png);">
-        <h3 class="text-white absolute bottom-0 left-0 mb-4 md:mb-8 ml-4 md:ml-8">Services / Artificial Intelligence</h3>
+        style="background-image: url(/dist/assets/services/services_background.png);">
+        <h3 class="text-white absolute bottom-0 left-0 mb-4 md:mb-8 ml-4 md:ml-8">Services / Artificial Intelligence
+        </h3>
     </div>
     <div class='w-full p-4 flex items-center py-16'>
         <div class='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
             <div class='col-span-2'>
                 <h1 class="text-3xl font-extrabold py-4">Artificial Intelligence</h1>
-                <img class="py-2 w-full" src="assets/services/AI_Sevice.png" alt="app-development" />
+                <img class="py-2 w-full" src="/dist/assets/services/AI_Sevice.png" alt="app-development" />
                 <p class='py-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -207,13 +202,13 @@
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                 <div class="p-8">
-                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="assets/services/check.png"
+                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="/dist/assets/services/check.png"
                                 alt="/"></span>One year after sales support</h3>
-                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="assets/services/check.png"
+                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="/dist/assets/services/check.png"
                                 alt="/"></span>One year after sales support</h3>
-                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="assets/services/check.png"
+                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="/dist/assets/services/check.png"
                                 alt="/"></span>One year after sales support</h3>
-                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="assets/services/check.png"
+                    <h3 class="flex text-[#3100fb] mb-2"><span><img class="pt-1 mr-2" src="/dist/assets/services/check.png"
                                 alt="/"></span>One year after sales support</h3>
                 </div>
                 <p class='py-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -279,9 +274,11 @@
                             </select>
                         </div>
                         <div class="col-span-2 mb-3">
-                            <label for="inputFile"></label>
-                            <input class="bg-gray-100 border-none rounded-md py-1 px-3 w-full" type="file"
-                                id="inputFile" name="Files" />
+                            <label for="dropzone-file" class="flex px-3 py-1 bg-white rounded-md cursor-pointer">
+                                <p id="file-name" class="mb-2">Upload files</p>
+                                <input id="dropzone-file" name="Files" type="file" class="hidden"
+                                    onchange="displayFileName('dropzone-file', 'file-name')" />
+                            </label>
                         </div>
                         <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
                         <div class="flex justify-center">
@@ -293,14 +290,14 @@
                 </div>
                 <h3 class="mt-14">Other Services</h3>
                 <div class="my-10">
-                    <a href="services_app-development.html">
-                        <img class="mb-2" src="assets/services/AD_Service.png" alt="app-development" />
+                    <a href="/dist/services_app-development.html">
+                        <img class="mb-2" src="/dist/assets/services/AD_Service.png" alt="app-development" />
                         <h3 class="text-xl font-bold">App Development</h3>
                     </a>
                 </div>
                 <div>
-                    <a href="services_business-intelligence.html">
-                        <img class="mb-2" src="assets/services/BI_Service.png" alt="business-intelligence" />
+                    <a href="/dist/services_business-intelligence.html">
+                        <img class="mb-2" src="/dist/assets/services/BI_Service.png" alt="business-intelligence" />
                         <h3 class="text-xl font-bold">Business Intelligence</h3>
                     </a>
                 </div>
@@ -340,13 +337,13 @@
                 </div>
                 <div class="flex">
                     <a class="text-white mr-2" href="https://www.example.com" rel="noopener noreferrer">
-                        <img src="assets/socials/linkedin.svg" alt="linkedin logo" />
+                        <img src="/dist/assets/socials/linkedin.svg" alt="linkedin logo" />
                     </a>
                     <a class="text-white mr-2 " href="https://www.example.com" rel="noopener noreferrer">
-                        <img src="assets/socials/youtube.svg" alt="youtube logo" />
+                        <img src="/dist/assets/socials/youtube.svg" alt="youtube logo" />
                     </a>
                     <a class="text-white mr-2" href="https://www.example.com" rel="noopener noreferrer">
-                        <img src="assets/socials/instagram.svg" alt="instagram logo" />
+                        <img src="/dist/assets/socials/instagram.svg" alt="instagram logo" />
                     </a>
                 </div>
             </div>
@@ -356,75 +353,73 @@
 </body>
 <!-- footer -->
 <footer class="bg-[#333333] text-white p-8">
-    <div class="container mx-auto">
-        <div class="md:flex justify-between">
-            <!-- About column -->
-            <div class="mb-8">
-                <h3 class="mb-4">About Janus</h3>
-                <p>Lorem Ipsum is simply dummy text of </p>
-                <p>the printing and typesetting industry.</p>
-                <p>Lorem Ipsum has been the industry's</p>
-                <p>standard dummy text ever since the</p>
-                <p>1500s.Lorem Ipsum is simply dummy</p>
-                <p>text of the printing and typesetting</p>
-                <p>industry. Lorem Ipsum has been the </p>
-                <p>industry's standard dummy text</p>
-            </div>
+  <div class="container mx-auto">
+    <div class="md:flex justify-between">
+      <!-- About column -->
+      <div class="mb-8">
+        <h3 class="mb-4">About Janus</h3>
+        <p>Lorem Ipsum is simply dummy text of </p>
+        <p>the printing and typesetting industry.</p>
+        <p>Lorem Ipsum has been the industry's</p>
+        <p>standard dummy text ever since the</p>
+        <p>1500s.Lorem Ipsum is simply dummy</p>
+        <p>text of the printing and typesetting</p>
+        <p>industry. Lorem Ipsum has been the </p>
+        <p>industry's standard dummy text</p>
+      </div>
 
-            <!-- Links column -->
-            <div class="mb-8">
-                <h3 class="mb-4">Quick Links</h3>
-                <ul class="text-md">
-                    <li class="relative parent mb-2">
-                        <a class="flex justify-between md:inline-flex items-center hover:text-blue-500 space-x-2">
-                            <span>Services</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1"
-                                viewBox="0 0 24 24">
-                                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
-                            </svg>
-                        </a>
-                        <ul
-                            class="child transition duration-300 absolute top-0 left-24 md:w-48 border-2 border-gray-500 bg-[#333333] rounded-md ">
-                            <li>
-                                <a href="services_app-development.html"
-                                    class="flex px-4 py-3 hover:text-blue-500 hover:underline">
-                                    App development
-                                </a>
-                            </li>
-                            <li>
-                                <a href="services_artificial-intelligence.html"
-                                    class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
-                                    Artificial Intelligence
-                                </a>
-                            </li>
-                            <li>
-                                <a href="services_business-intelligence.html"
-                                    class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
-                                    Business Intelligence
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="hover:text-blue-500 hover:underline mb-2"><a href="#">Blog</a></li>
-                    <li class="hover:text-blue-500 hover:underline mb-2"><a href="contact.html">Contact Us</a></li>
-                    <li class="hover:text-blue-500 hover:underline mb-2"><a href="about.html">About Us</a></li>
-                </ul>
-            </div>
+      <!-- Links column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Quick Links</h3>
+        <ul class="text-md">
+          <li class="relative parent mb-2">
+            <a class="flex md:inline-flex items-center hover:text-blue-500 space-x-2">
+              <span>Services</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
+                <path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z" />
+              </svg>
+            </a>
+            <ul
+              class="child transition duration-300 absolute top-0 left-24 md:w-48 border-2 border-gray-500 bg-[#333333] rounded-md ">
+              <li>
+                <a href="/dist/services_app-development.html" class="flex px-4 py-3 hover:text-blue-500 hover:underline">
+                  App development
+                </a>
+              </li>
+              <li>
+                <a href="/dist/services_artificial-intelligence.html"
+                  class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
+                  Artificial Intelligence
+                </a>
+              </li>
+              <li>
+                <a href="/dist/services_business-intelligence.html"
+                  class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
+                  Business Intelligence
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="#">Blog</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="/dist/contact.html">Contact Us</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="/dist/about.html">About Us</a></li>
+        </ul>
+      </div>
 
-            <!-- Contacts column -->
-            <div class="mb-8">
-                <h3 class="mb-4">Contacts</h3>
-                <p>5th Avenue</p>
-                <p>7th Cross, Calvin Ridge</p>
-                <p>Taxas-32587</p>
-                <p>Phone : + 1885 6785 12</p>
-                <p class="my-4">hello@janus.com</p>
-                <p>+91 8856 34 4554</p>
-            </div>
-        </div>
+      <!-- Contacts column -->
+      <div class="mb-8">
+        <h3 class="mb-4">Contacts</h3>
+        <p>5th Avenue</p>
+        <p>7th Cross, Calvin Ridge</p>
+        <p>Taxas-32587</p>
+        <p>Phone : +1 885 6785 12</p>
+        <p class="my-4">hello@janus.com</p>
+        <p>+91 8856 34 4554</p>
+      </div>
     </div>
+  </div>
 </footer>
-<script src="script.js"></script>
+<script src="/dist/script.js"></script>
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
 
-</html>
+</html>/dist/
