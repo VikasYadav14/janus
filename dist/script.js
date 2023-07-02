@@ -1,12 +1,73 @@
-// google reCAPTCHA
-grecaptcha.ready(function() {
-  grecaptcha.execute("6LdlG8YmAAAAAHn7IaOetjvTqulE42vgHzpoJWOG")
-  .then(function(token) {document.getElementById('captchaResponse').value = token;
-  });
+// navbar script
+
+// Burger menus
+document.addEventListener('DOMContentLoaded', function () {
+  // open
+  const burger = document.querySelectorAll('.navbar-burger');
+  const menu = document.querySelectorAll('.navbar-menu');
+
+  if (burger.length && menu.length) {
+    for (var i = 0; i < burger.length; i++) {
+      burger[i].addEventListener('click', function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle('hidden');
+        }
+      });
+    }
+  }
+
+  // close
+  const close = document.querySelectorAll('.navbar-close');
+  const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+  if (close.length) {
+    for (var i = 0; i < close.length; i++) {
+      close[i].addEventListener('click', function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle('hidden');
+        }
+      });
+    }
+  }
+
+  if (backdrop.length) {
+    for (var i = 0; i < backdrop.length; i++) {
+      backdrop[i].addEventListener('click', function () {
+        for (var j = 0; j < menu.length; j++) {
+          menu[j].classList.toggle('hidden');
+        }
+      });
+    }
+  }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  let prevScrollPos = window.scrollY;
+  const navbar = document.getElementById('navbar');
+  const navService = document.getElementById('nav_service');
+  window.addEventListener('scroll', () => {
+    const currentScrollPos = window.scrollY;
+
+    if (prevScrollPos > currentScrollPos) {
+      navbar.classList.remove('hidden');
+    } else {
+      navbar.classList.add('hidden');
+    }
+
+    if (currentScrollPos === 0) {
+      navbar.classList.remove('shadow', 'fixed', 'w-full', 'z-40');
+      navService.classList.remove('hidden');
+    } else {
+      navbar.classList.add('shadow-xl', 'fixed', 'w-full', 'z-40', 'ease-in-out', 'duration-300');
+      navService.classList.add('hidden');
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+})
+
 // cards slider for testimonial and related articles
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const testimonialCards = Array.from(document.querySelectorAll('.testimonial-card'));
   const testimonialBtns = document.querySelectorAll('.testimonial-btn');
   let numVisibleCards;
@@ -53,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-
   // Update number of visible cards on window resize
   window.addEventListener('resize', updateNumVisibleCards);
 
@@ -61,78 +121,84 @@ document.addEventListener('DOMContentLoaded', function() {
   updateNumVisibleCards();
   showCards();
 });
+// Function to check if it's the home page
+function isHomePage() {
+  return window.location.pathname === '/dist/' || window.location.pathname === '/';
+}
+// Home page word dissolving effect
+var word = ['App Development', 'Artificial Intelligence', 'Business Intelligence'];
+var currentIndex = 0;
 
+function displayWord() {
+  var wordDisplay = document.getElementById("word-display");
 
-// navbar script
+  // Apply dissolve effect to hide the current word
+  wordDisplay.classList.remove("appear");
+  wordDisplay.classList.add("dissolve");
 
-// Burger menus
-document.addEventListener('DOMContentLoaded', function () {
-  // open
-  const burger = document.querySelectorAll('.navbar-burger');
-  const menu = document.querySelectorAll('.navbar-menu');
+  setTimeout(function () {
+    // Update the content with the new word
+    wordDisplay.textContent = word[currentIndex];
 
-  if (burger.length && menu.length) {
-      for (var i = 0; i < burger.length; i++) {
-          burger[i].addEventListener('click', function () {
-              for (var j = 0; j < menu.length; j++) {
-                  menu[j].classList.toggle('hidden');
-              }
-          });
-      }
-  }
+    // Apply appear effect to show the new word
+    wordDisplay.classList.remove("dissolve");
+    wordDisplay.classList.add("appear");
 
-  // close
-  const close = document.querySelectorAll('.navbar-close');
-  const backdrop = document.querySelectorAll('.navbar-backdrop');
+    currentIndex++;
 
-  if (close.length) {
-      for (var i = 0; i < close.length; i++) {
-          close[i].addEventListener('click', function () {
-              for (var j = 0; j < menu.length; j++) {
-                  menu[j].classList.toggle('hidden');
-              }
-          });
-      }
-  }
-
-  if (backdrop.length) {
-      for (var i = 0; i < backdrop.length; i++) {
-          backdrop[i].addEventListener('click', function () {
-              for (var j = 0; j < menu.length; j++) {
-                  menu[j].classList.toggle('hidden');
-              }
-          });
-      }
-  }
-});
-
-// Home page worder changer with Writable
-const words = ['  App Development     ', '  Artificial Intelligence     ','  Business Intelligence     '];
-let i = 0;
-let j = 0;
-let currentWord = "";
-let isDeleting = false;
-
-function type() {
-  currentWord = words[i];
-  if (isDeleting) {
-    document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
-    j--;
-    if (j == 0) {
-      isDeleting = false;
-      i++;
-      if (i == words.length) {
-        i = 0;
-      }
+    if (currentIndex >= word.length) {
+      currentIndex = 0;
     }
-  } else {
-    document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
-    j++;
-    if (j == currentWord.length) {
-      isDeleting = true;
-    }
-  }
-  setTimeout(type, 200);
+
+    setTimeout(displayWord, 3000);
+  }, 2000);
 }
 
-type();
+if (isHomePage()) {
+  displayWord();
+}
+
+// Home page worder changer with typewriter effect
+// const words = ['  App Development     ', '  Artificial Intelligence     ', '  Business Intelligence     '];
+// let i = 0;
+// let j = 0;
+// let currentWord = "";
+// let isDeleting = false;
+
+// function type() {
+//   currentWord = words[i];
+//   if (isDeleting) {
+//     document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+//     j--;
+//     if (j == 0) {
+//       isDeleting = false;
+//       i++;
+//       if (i == words.length) {
+//         i = 0;
+//       }
+//     }
+//   } else {
+//     document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+//     j++;
+//     if (j == currentWord.length) {
+//       isDeleting = true;
+//     }
+//   }
+//   setTimeout(type, 200);
+// }
+
+// type();
+
+// google reCAPTCHA
+grecaptcha.ready(function () {
+  grecaptcha.execute("6LdlG8YmAAAAAHn7IaOetjvTqulE42vgHzpoJWOG")
+    .then(function (token) {
+      document.getElementById('captchaResponse').value = token;
+    });
+});
+
+function displayFileName(fileInputId, fileNameId) {
+  var fileInput = document.getElementById(fileInputId);
+  var fileNameLabel = document.getElementById(fileNameId);
+  fileNameLabel.textContent = fileInput.files[0].name;
+}
