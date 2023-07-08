@@ -23,6 +23,16 @@
       overflow: hidden;
       transform: translateY(-10%);
     }
+
+    #tidio-chat-iframe {
+      bottom: 60px !important;
+    }
+
+    @media only screen and (max-width: 980px) {
+      #tidio-chat-iframe {
+        bottom: 60px !important;
+      }
+    }
   </style>
   <script src="//code.tidio.co/gifdisfv76mb4nbqwyeg6jcmklqaolli.js"  async></script>
   <script src="https://www.google.com/recaptcha/api.js?render=6LdlG8YmAAAAAHn7IaOetjvTqulE42vgHzpoJWOG"></script>
@@ -280,8 +290,7 @@
         </p>
       </div>
       <div class="hidden md:block col-span-3">
-        <div
-          class='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+        <div>
           <Image src="assets/abouts/janus_mug.png" class='rounded-xl' alt='/' title='About Image' />
         </div>
       </div>

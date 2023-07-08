@@ -23,6 +23,16 @@
       overflow: hidden;
       transform: translateY(-10%);
     }
+
+    #tidio-chat-iframe {
+      bottom: 60px !important;
+    }
+
+    @media only screen and (max-width: 980px) {
+      #tidio-chat-iframe {
+        bottom: 60px !important;
+      }
+    }
   </style>
   <script src="//code.tidio.co/gifdisfv76mb4nbqwyeg6jcmklqaolli.js"  async></script>
   <script src="https://www.google.com/recaptcha/api.js?render=6LdlG8YmAAAAAHn7IaOetjvTqulE42vgHzpoJWOG"></script>
@@ -269,7 +279,7 @@
             </label>
           </div> -->
           <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-          <div class="flex justify-center col-span-2">
+          <div class="flex justify-center col-span-2 mt-4">
             <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-2/5 p-2"
               type="submit">Submit
             </button>
