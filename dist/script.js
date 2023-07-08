@@ -126,7 +126,7 @@ function isHomePage() {
   return window.location.pathname === '/dist/' || window.location.pathname === '/';
 }
 // Home page word dissolving effect
-var word = ['App Development', 'Artificial Intelligence', 'Business Intelligence'];
+var word = ['Software Integration', 'Artificial Inteligence', 'Custom Software Solution'];
 var currentIndex = 0;
 
 function displayWord() {
