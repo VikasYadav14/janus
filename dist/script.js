@@ -126,68 +126,68 @@ function isHomePage() {
   return window.location.pathname === '/dist/' || window.location.pathname === '/';
 }
 // Home page word dissolving effect
-var word = ['Software Integration', 'Artificial Inteligence', 'Custom Software Solution'];
-var currentIndex = 0;
+// var word = ['Software Integration', 'Artificial Inteligence', 'Custom Software Solution'];
+// var currentIndex = 0;
 
-function displayWord() {
-  var wordDisplay = document.getElementById("word-display");
+// function displayWord() {
+//   var wordDisplay = document.getElementById("word-display");
 
-  // Apply dissolve effect to hide the current word
-  wordDisplay.classList.remove("appear");
-  wordDisplay.classList.add("dissolve");
+//   // Apply dissolve effect to hide the current word
+//   wordDisplay.classList.remove("appear");
+//   wordDisplay.classList.add("dissolve");
 
-  setTimeout(function () {
-    // Update the content with the new word
-    wordDisplay.textContent = word[currentIndex];
+//   setTimeout(function () {
+//     // Update the content with the new word
+//     wordDisplay.textContent = word[currentIndex];
 
-    // Apply appear effect to show the new word
-    wordDisplay.classList.remove("dissolve");
-    wordDisplay.classList.add("appear");
+//     // Apply appear effect to show the new word
+//     wordDisplay.classList.remove("dissolve");
+//     wordDisplay.classList.add("appear");
 
-    currentIndex++;
+//     currentIndex++;
 
-    if (currentIndex >= word.length) {
-      currentIndex = 0;
-    }
-
-    setTimeout(displayWord, 3000);
-  }, 2000);
-}
-
-if (isHomePage()) {
-  displayWord();
-}
-
-// Home page worder changer with typewriter effect
-// const words = ['  App Development     ', '  Artificial Intelligence     ', '  Business Intelligence     '];
-// let i = 0;
-// let j = 0;
-// let currentWord = "";
-// let isDeleting = false;
-
-// function type() {
-//   currentWord = words[i];
-//   if (isDeleting) {
-//     document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
-//     j--;
-//     if (j == 0) {
-//       isDeleting = false;
-//       i++;
-//       if (i == words.length) {
-//         i = 0;
-//       }
+//     if (currentIndex >= word.length) {
+//       currentIndex = 0;
 //     }
-//   } else {
-//     document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
-//     j++;
-//     if (j == currentWord.length) {
-//       isDeleting = true;
-//     }
-//   }
-//   setTimeout(type, 200);
+
+//     setTimeout(displayWord, 3000);
+//   }, 2000);
 // }
 
-// type();
+// if (isHomePage()) {
+//   displayWord();
+// }
+
+// Home page worder changer with typewriter effect
+const words = ['  App Development  ', '  Artificial Intelligence  ', '  Business Intelligence  '];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+  currentWord = words[i];
+  if (isDeleting) {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j - 1);
+    j--;
+    if (j == 0) {
+      isDeleting = false;
+      i++;
+      if (i == words.length) {
+        i = 0;
+      }
+    }
+  } else {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j + 1);
+    j++;
+    if (j == currentWord.length) {
+      isDeleting = true;
+    }
+  }
+  setTimeout(type, 200);
+}
+
+type();
 
 // google reCAPTCHA
 grecaptcha.ready(function () {
