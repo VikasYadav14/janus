@@ -9,6 +9,7 @@
   <meta name="description" content="" />
   <link rel="icon" href="assets/home/small-logo.png" />
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
   <style>
     .parent:hover .child {
       opacity: 1;
@@ -35,19 +36,27 @@
     }
 
     #tidio-chat-iframe {
-      bottom: 60px !important;
+      bottom: 5px !important;
     }
 
     @media only screen and (max-width: 980px) {
       #tidio-chat-iframe {
-        bottom: 60px !important;
+        bottom: 5px !important;
       }
     }
   </style>
   <script src="//code.tidio.co/gifdisfv76mb4nbqwyeg6jcmklqaolli.js" async></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=6LdlG8YmAAAAAHn7IaOetjvTqulE42vgHzpoJWOG"></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+  <script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('html_element', {
+          'sitekey' : '6LcYMXQnAAAAAHKTWbNgen9aGictSo9S8OuDLFg_'
+      });
+    };
+  </script>
 </head>
 
+<body>
 <!-- Navbar Section Start -->
 <navbar id="navbar" class="bg-white">
   <div class="lg:py-4 lg:px-16 p-4 relative">
@@ -73,25 +82,25 @@
           <ul
             class="child transition duration-300 md:absolute top-full left-0 md:w-48 bg-white md:shadow-lg md:rounded-b ">
             <li>
-              <a href="services_software-integration.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
+              <a href="software-integration.html" class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb]">
                 Software Integration
               </a>
             </li>
             <li>
-              <a href="services_artificial-intelligence.html"
+              <a href="artificial-intelligence.html"
                 class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
                 Artificial Intelligence
               </a>
             </li>
             <li>
-              <a href="services_custom-website.html"
+              <a href="website-development.html"
                 class="flex px-4 py-3 hover:bg-blue-50 hover:text-[#3100fb] whitespace-nowrap">
-                Custom Website
+                Website Development
               </a>
             </li>
           </ul>
         </li>
-        <li><a class=" hover:text-[#3100fb]" href="portfolio">Portfolio&apos;s</a></li>
+        <li><a class=" hover:text-[#3100fb]" href="portfolio">Portfolio</a></li>
         <li><a class=" hover:text-[#3100fb]" href="about.html">About Us</a></li>
         <li><a class=" hover:text-[#3100fb]" href="contact.html">Contact Us</a></li>
       </ul>
@@ -99,7 +108,7 @@
     <div id="nav_service" class="">
       <div class="hidden md:block mt-4 pl-16">
         <div class="border-l-2 border-black h-100">
-          <p class="mb-4 ml-8">Software Integration | Artificial Inteligence | Custom Software Solution</p>
+          <p class="mb-4 ml-8">Software Integration | Artificial Inteligence | Website Development</p>
         </div>
       </div>
     </div>
@@ -142,23 +151,23 @@
               class="z-10 hidden bg-[#333333] border-2 rounded-md divide-y divide-gray-100 shadow w-5/6">
               <ul class="py-2 text-sm" aria-labelledby="dropdownDefaultButton">
                 <li>
-                  <a href="services_software-integration.html"
+                  <a href="software-integration.html"
                     class="block p-4 font-semibold hover:text-blue-500 rounded">Software Integration</a>
                 </li>
                 <li>
-                  <a href="services_artificial-intelligence.html"
+                  <a href="artificial-intelligence.html"
                     class="block p-4 font-semibold hover:text-blue-500 rounded">Artificial
                     Intelligence</a>
                 </li>
                 <li>
-                  <a href="services_custom-website.html"
-                    class="block p-4 font-semibold hover:text-blue-500 rounded">Custom Software</a>
+                  <a href="website-development.html"
+                    class="block p-4 font-semibold hover:text-blue-500 rounded">Website Development</a>
                 </li>
               </ul>
             </div>
           </li>
           <li class="mb-1">
-            <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="portfolio/">Portfolio&apos;s</a>
+            <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="portfolio">Portfolio</a>
           </li>
           <li class="mb-1">
             <a class="block p-4 font-semibold 0 hover:text-blue-500 rounded" href="#">Blog</a>
@@ -170,37 +179,49 @@
         </ul>
       </div>
     </div>
-    <div class="bg-[#3100FB] text-white p-10">
-      <a href="contact.html">
-        <h2 class="mb-4">Contact</h2>
+    <div class="bg-[#3100FB] text-white m-10">
+      <table>
+            <tr>
+              <td><a href="contact.html"><h2 class="mb-3 text-white">Contact</h2></a></td>
+            </tr>
+            <tr>
+              <td class="text-white">5th Avenue</td>
+            </tr>
+            <tr>
+              <td class="text-white">7th Cross, Calvin Ridge</td>
+            </tr>
+            <tr>
+              <td class="text-white">Texas-32587</td>
+            </tr>
+            <tr>
+              <td class="text-white">Phone: +1885 6785 12</td>
+            </tr>
+          </table>
+    </div>
+    <div class="mx-10">
+      <table>
+        <tr>
+          <td class="hover:text-gray-400"><a href="mailto:client-care@janussolutionsgroup.com" class="font-bold">client-care@janussolutionsgroup.com</a></td>
+        </tr>
+        <tr>
+          <td class="hover:text-gray-400"><a href="tel:+918856344554" class="font-bold">+91 8856344554</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="flex m-10">
+      <a class="mr-2" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A68894748&keywords=janus%20solutions%20group&origin=RICH_QUERY_SUGGESTION&position=0&searchId=75c01721-6a92-4250-82cc-e854a74d3e85&sid=WTI" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
       </a>
-      <div class="flex flex-col justify-around content-center">
-        <p>5th Avenue</p>
-        <p>7th Cross, Calvin Ridge</p>
-        <p>Taxas-32587</p>
-        <p class="mb-8">Phone: +1885 6785 12</p>
-        <div class="mb-8">
-          <h3 class="hover:text-gray-400"><a href="mailto:hello@janus.com">hello@janus.com</a></h3>
-          <h3 class="hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
-              4554</a></h3>
-        </div>
-        <div class="flex">
-          <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-            <img src="assets/socials/linkedin.svg" alt="linkedin logo" />
-          </a>
-          <a class="text-white mr-2 " href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-            <img src="assets/socials/youtube.svg" alt="youtube logo" />
-          </a>
-          <a class="text-white mr-2" href="https://www.example.com" target="_blank" rel="noopener noreferrer">
-            <img src="assets/socials/instagram.svg" alt="instagram logo" />
-          </a>
-        </div>
-      </div>
+      <a class="mr-2" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-youtube fa-2xl" style="color: #ffffff;"></i>
+      </a>
+      <a class="mr-2" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+      </a>
     </div>
   </nav>
 </sidebar>
 
-<body>
   <div class='w-full p-4 flex justify-start items-start'>
     <div class='max-w-[1240px] m-auto  py-20 md:pr-20'>
       <div>
@@ -226,7 +247,7 @@
             <h6 class="mb-2">01______________ What We Do</h5>
               <h2 class="font-extrabold mb-8">Software Integration</h2>
               <img class="block md:hidden lg:hidden" src="assets/home/customSoftware.png" alt="custom Software">
-              <p class="text-sm">In the digital realm, success lies in unity. Imagine a symphony of software,
+              <p class="text-sm text-justify">In the digital realm, success lies in unity. Imagine a symphony of software,
                 harmoniously working together to amplify your business's potential. We orchestrate this symphony,
                 turning complex integration challenges into seamless solutions at pace and scale while prioritizing
                 customer satisfaction. Witness streamlined operations and enhanced collaboration among your management
@@ -237,29 +258,11 @@
         </div>
         <div class="md:flex justify-center items-center mb-16">
           <div class="md:w-1/2 md:px-8">
-            <h6 class="mb-2">02______________ What We Do</h5>
-              <h2 class="font-extrabold mb-8 ">Wesbite development</h2>
-              <img class="block md:hidden lg:hidden" src="assets/home/webDevelopment.png" alt="Wesbite development">
-              <p class="text-sm">Embark on a digital journey that sets your business apart where imagination meets
-                seamless performance. We craft tailored online experiences that exceed expectations and seamlessly blend
-                innovation and functionality. From captivating design to flawless payment integration, from smooth
-                conversions to personalized touches, from visitor engagement to search rankings optimization, we work
-                for your business on your behalf. Experience unrivalled connectivity, optimized efficiency, and
-                boundless innovation. Transform your digital landscape with a bespoke website that becomes the
-                cornerstone of your triumph.</p>
-          </div>
-          <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
-              src="assets/home/webDevelopment.png" alt="Wesbite development"></div>
-        </div>
-        <div class="md:flex justify-center items-center mb-16">
-          <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
-              src="assets/home/artificialIntelligence.png" alt="Artificial Intelligence"></div>
-          <div class="md:w-1/2 md:px-8">
             <h6 class="mb-2">03______________ What We Do</h5>
               <h2 class="font-extrabold mb-8">Artificial Intelligence</h2>
               <img class="block lg:hidden md:hidden" src="assets/home/artificialIntelligence.png"
                 alt="Artificial Intelligence">
-              <p class="text-sm">Unleash the power of AI solutions and dive into the realm of data analytics, where
+              <p class="text-sm text-justify">Unleash the power of AI solutions and dive into the realm of data analytics, where
                 hidden patterns and actionable insights shape informed decision-making. Our close engagement ensures
                 fast turnaround time, prioritizing your data-driven aspirations. Join the natural language processing
                 and generation revolution, where machines effortlessly understand and communicate with humans. Discover
@@ -267,6 +270,26 @@
                 businesses that trust our integration advantage. Step into the future with artificial intelligence, and
                 reshape the narrative of your success.
               </p>
+          </div>
+          <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
+            src="assets/home/artificialIntelligence.png" alt="Artificial Intelligence">
+        </div>
+        </div>
+        <div class="md:flex justify-center items-center mb-16">
+          <div class="md:w-1/2 flex items-center justify-center"><img class="hidden md:block"
+            src="assets/home/webDevelopment.png" alt="Wesbite development">
+          </div>
+          <div class="md:w-1/2 md:px-8">
+            <h6 class="mb-2">02______________ What We Do</h5>
+              <h2 class="font-extrabold mb-8 ">Wesbite development</h2>
+              <img class="block md:hidden lg:hidden" src="assets/home/webDevelopment.png" alt="Wesbite development">
+              <p class="text-sm text-justify">Embark on a digital journey that sets your business apart where imagination meets
+                seamless performance. We craft tailored online experiences that exceed expectations and seamlessly blend
+                innovation and functionality. From captivating design to flawless payment integration, from smooth
+                conversions to personalized touches, from visitor engagement to search rankings optimization, we work
+                for your business on your behalf. Experience unrivalled connectivity, optimized efficiency, and
+                boundless innovation. Transform your digital landscape with a bespoke website that becomes the
+                cornerstone of your triumph.</p>
           </div>
         </div>
       </div>
@@ -280,15 +303,15 @@
         <h1 class="font-extrabold mb-4">Why choose Us</h3>
           <div class="border-b-4 border-[#3100fb] h-1 w-28 mb-8"></div>
       </div>
-      <div class="md:grid grid-rows-9 grid-flow-col gap-4">
-        <div class="flex flex-col justify-center bg-white p-4 mb-8 row-span-3 ...">
-          <div class="flex justify-between mb-8">
+      <div class="md:grid grid-rows-9 grid-flow-col gap-2">
+        <div class="flex flex-col justify-center bg-white p-2 row-span-3 ...">
+          <div class="flex justify-between">
             <img class="hidden md:block" src="assets/home/01.png" alt="01">
             <img src="assets/home/experience-team.png">
             <img class="block md:hidden" src="assets/home/01.png" alt="01">
           </div>
           <div class="flex flex-col text-start md:text-end">
-            <h5 class="text-lg mb-8">Experienced Team</h5>
+            <h5 class="text-lg">Experienced Team</h5>
             <p class="text-sm">Trust the expertise of our seasoned professionals who bring a wealth of experience to the
               table. Our talented team comprises industry veterans and tech-savvy individuals who have successfully
               tackled complex challenges across diverse domains. With their deep knowledge and skill set, they are
@@ -297,40 +320,40 @@
           </div>
         </div>
         <div class="bg-[#d3efff] row-span-3 col-span-4 ...">
-          <div class="md:grid grid-cols-8 gap-4">
-            <div class="flex flex-col justify-center bg-white p-4 col-span-3 mb-8 md:mb-0">
-              <div class="flex justify-between mb-8">
+          <div class="md:grid grid-cols-8 gap-2">
+            <div class="flex flex-col justify-center bg-white p-2 col-span-3 md:mb-0">
+              <div class="flex justify-between">
                 <img src="assets/home/innovative-approach.png">
                 <img src="assets/home/02.png" alt="02">
               </div>
               <div class="flex flex-col text-start">
-                <h5 class="text-lg mb-8">Customer Satisfaction</h5>
+                <h5 class="text-lg">Customer Satisfaction</h5>
                 <p class="text-sm">Your satisfaction is our ultimate measure of success. We go the extra mile to ensure
                   that every interaction, every deliverable exceeds your expectations. From personalized attention to
                   exceptional service, we are dedicated to creating an exceptional customer experience. Your happiness
                   is our motivation to continually improve and surpass your highest standards.</p>
               </div>
             </div>
-            <div class="flex flex-col justify-center bg-white p-4 mb-8 md:mb-0 col-span-5 ...">
-              <div class="flex justify-between mb-8">
+            <div class="flex flex-col justify-center bg-white p-2 md:mb-0 col-span-5 ...">
+              <div class="flex justify-between">
                 <img src="assets/home/proven-expertise.png">
                 <img src="assets/home/03.png" alt="03">
               </div>
               <div class="flex flex-col text-start">
-                <h5 class="text-lg mb-8">Close Engagement</h5>
+                <h5 class="text-lg">Close Engagement</h5>
                 <p class="text-sm">Collaboration is at the heart of our approach. We believe in building strong
                   partnerships and close relationships with our customers. Through active listening and open
                   communication, we gain a deep understanding of your vision, fostering trust and enabling us to align
                   our strategies seamlessly with your goals. Together, we will create extraordinary outcomes.</p>
               </div>
             </div>
-            <div class="flex flex-col justify-center p-4 bg-[#7857ff] mb-8 col-span-5">
-              <div class="flex justify-between mb-8">
+            <div class="flex flex-col justify-center p-2 bg-[#7857ff] col-span-5">
+              <div class="flex justify-between">
                 <img src="assets/home/user-centric.png">
                 <img src="assets/home/04.png" alt="04">
               </div>
               <div class="flex flex-col text-start text-white">
-                <h5 class="text-lg mb-8">Solution-First Approach</h5>
+                <h5 class="text-lg">Solution-First Approach</h5>
                 <p class="text-sm"> Your challenges are our inspiration. We take a holistic view of your requirements,
                   crafting comprehensive solutions that address your unique pain points. Our focus is on delivering
                   tangible results and measurable impact, putting your success at the forefront of every decision we
@@ -338,13 +361,13 @@
                 </p>
               </div>
             </div>
-            <div class="flex flex-col justify-center bg-white p-4 mb-8 col-span-3 ...">
-              <div class="flex justify-between mb-8">
+            <div class="flex flex-col justify-center bg-white p-2 col-span-3 ...">
+              <div class="flex justify-between">
                 <img src="assets/home/fast-turn-around-time.png">
                 <img src="assets/home/05.png" alt="05">
               </div>
               <div class="flex flex-col text-start">
-                <h5 class="text-lg mb-8">Fast Turn-around Time</h5>
+                <h5 class="text-lg">Fast Turn-around Time</h5>
                 <p class="text-sm">We value your time and ensure swift delivery of solutions tailored to your needs. Our
                   agile processes and efficient workflows guarantee prompt results, empowering you to seize
                   opportunities without delay. Experience the speed of progress with our customer-centric approach.</p>
@@ -511,7 +534,7 @@
       <!-- Form column -->
       <div class="p-4 md:p-10 py-10 bg-[#7857ff]">
         <h2 class="text-white">Get a free consultation</h2>
-        <h4 class="mt-4">
+        <h4 class="mt-4 text-black">
           Get in touch with us for a free consult on the scope of your project.
         </h4>
         <form action="https://getform.io/f/4bb3944d-a904-4681-93ef-46c815837a71" method="POST"
@@ -552,8 +575,8 @@
                 onchange="displayFileName('dropzone-file', 'file-name')" />
             </label>
           </div> -->
-          <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
-          <div class="flex justify-center col-span-2 mt-4">
+          <div class="col-span-2 px-3 g-recaptcha"><div class="flex justify-center w-full" id="html_element"></div></div>
+          <div class="flex justify-center col-span-2 mt-4"> 
             <button class="bg-[#0F0D2D] text-white rounded-full hover:bg-black text-center w-2/5 p-2"
               type="submit">Submit
             </button>
@@ -562,7 +585,7 @@
       </div>
 
       <!-- Contact address column -->
-      <div class="text-white p-4 md:p-10 py-10 bg-[#3100fb]">
+      <!-- <div class="text-white p-4 md:p-10 py-10 bg-[#3100fb]">
         <h2 class="mb-4">Contact Address</h2>
         <div class="flex flex-col justify-between content-center">
           <div class="mb-5">
@@ -585,17 +608,92 @@
               </p>
             </div>
             <div class="mt-10">
-              <h3 class="hover:text-gray-400"><a href="mailto:hello@janus.com">hello@janus.com</a></h3>
-              <h3 class="hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
-                  4554</a></h3>
+              <h3></h3>
+              <h5 class="hover:text-gray-400"><a href="mailto:client-care@janussolutionsgroup.com">client-care@janussolutionsgroup.com</a></h5>
+              <h5 class="hover:text-gray-400"><a href="tel:+918856344554">+91 8856 34
+                  4554</a></h5>
             </div>
           </div>
 
         </div>
+      </div> -->
+
+      <div class="p-4 md:p-10 py-10 bg-[#3100fb]">
+        <div class="mb-5">
+          <table>
+            <tr>
+              <td><h2 class="mb-3 text-white">Contact Address</h2></td>
+            </tr>
+            <tr>
+              <td><h5 class="mb-6 text-black">We are located here. Visit us anytime soon</h5></td>
+            </tr>
+            <tr class="mb-5">
+              <td><h3 class="text-white">USA</h3></td>
+            </tr>
+            <tr>
+              <td class="text-white">5th Avenue</td>
+            </tr>
+            <tr>
+              <td class="text-white">7th Cross, Calvin Ridge</td>
+            </tr>
+            <tr>
+              <td class="text-white">Texas-32587</td>
+            </tr>
+            <tr>
+              <td class="text-white">Phone: +1885 6785 12</td>
+            </tr>
+          </table>
+        </div>
+        <div class="lg:flex lg:mb-14 mb-5 justify-between text-white" >
+          <div>
+            <table>
+              <tr class="mb-5">
+                <td><h3>Delhi, India</h3></td>
+              </tr>
+              <tr>
+                <td>5th Avenue</td>
+              </tr>
+              <tr>
+                <td>7th Cross, Calvin Ridge</td>
+              </tr>
+              <tr>
+                <td>Texas-32587</td>
+              </tr>
+              <tr>
+                <td>Phone: +1885 6785 12</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td><h3><br/></h3></td>
+              </tr>
+              <tr>
+                <td class="hover:text-gray-400"><a href="mailto:client-care@janussolutionsgroup.com" class="font-bold">client-care@janussolutionsgroup.com</a></td>
+              </tr>
+              <tr>
+                <td class="hover:text-gray-400"><a href="tel:+918856344554" class="font-bold">+91 8856344554</a></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+        <div class="flex">
+          <a class="mr-2" href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A68894748&keywords=janus%20solutions%20group&origin=RICH_QUERY_SUGGESTION&position=0&searchId=75c01721-6a92-4250-82cc-e854a74d3e85&sid=WTI" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+          </a>
+          <a class="mr-2" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-youtube fa-2xl" style="color: #ffffff;"></i>
+          </a>
+          <a class="mr-2" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-instagram fa-2xl" style="color: #ffffff;"></i>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-</body>
+
 <!-- footer -->
 <footer class="bg-[#333333] text-white p-4">
   <div class="container max-w-[1240px] m-auto">
@@ -603,20 +701,17 @@
       <!-- About column -->
       <div class="mb-8 md:w-1/3">
         <h3 class="mb-4">About Janus</h3>
-        <p>At Janus Solutions Group, we are driven by our commitment to excellence and customer-centricity. With a
-          solution-first approach, our experienced team delivers swift and tailored solutions, ensuring a fast
-          turnaround time that keeps you ahead. We believe in close engagement, building strong partnerships through
-          active listening and open communication. Our ultimate goal is your satisfaction, going the extra mile to
-          exceed your expectations and provide an exceptional customer experience. Trust our seasoned experts, who bring
-          deep industry knowledge and skills to overcome challenges and deliver outstanding results. Join us on a
-          transformative journey towards success.</p>
+        <p class="text-justify">At Janus, we prioritize excellence and customer satisfaction through tailored, 
+          swift solutions and open communication. Trust our seasoned experts, 
+          who bring deep industry knowledge and skills to overcome challenges 
+          and deliver outstanding results and join us on a transformative journey towards success.</p>
       </div>
 
       <!-- Links column -->
-      <div class="mb-8">
+      <div class="mb-8 text-justify">
         <h3 class="mb-4">Quick Links</h3>
         <ul class="text-md">
-          <li class="relative parent mb-2">
+          <!-- <li class="relative parent mb-2">
             <a class="flex md:inline-flex items-center hover:text-blue-500 space-x-2">
               <span>Services</span>
               <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current pt-1" viewBox="0 0 24 24">
@@ -626,25 +721,28 @@
             <ul
               class="child transition duration-300 absolute top-0 left-24 md:w-48 border-2 border-gray-500 bg-[#333333] rounded-md ">
               <li>
-                <a href="services_software-integration.html" class="flex px-4 py-3 hover:text-blue-500 hover:underline">
+                <a href="software-integration.html" class="flex px-4 py-3 hover:text-blue-500 hover:underline">
                   Software Integration
                 </a>
               </li>
               <li>
-                <a href="services_artificial-intelligence.html"
+                <a href="artificial-intelligence.html"
                   class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
                   Artificial Intelligence
                 </a>
               </li>
               <li>
-                <a href="services_custom-website.html"
+                <a href="website-development.html"
                   class="flex px-4 py-3 hover:text-blue-500 hover:underline whitespace-nowrap">
-                  Custom Website
+                  Website Development
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="hover:text-blue-500 hover:underline mb-2"><a href="#">Blog</a></li>
+          </li> -->
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="software-integration.html">Software Integration</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="artificial-intelligence.html">Artificial Intelligence</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="website-development.html">Website Development</a></li>
+          <li class="hover:text-blue-500 hover:underline mb-2"><a href="portfolio/index.html">Portfolio</a></li>
           <li class="hover:text-blue-500 hover:underline mb-2"><a href="contact.html">Contact Us</a></li>
           <li class="hover:text-blue-500 hover:underline mb-2"><a href="about.html">About Us</a></li>
         </ul>
@@ -657,12 +755,14 @@
         <p>7th Cross, Calvin Ridge</p>
         <p>Taxas-32587</p>
         <p>Phone : +1 885 6785 12</p>
-        <p class="my-4">hello@janus.com</p>
+        <p class="my-4">client-care@janussolutionsgroup.com</p>
         <p>+91 8856 34 4554</p>
       </div>
     </div>
   </div>
 </footer>
+</body>
+<script src="https://kit.fontawesome.com/74e9cd1ae8.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
 

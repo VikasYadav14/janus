@@ -131,7 +131,12 @@ function isHomePage() {
 
 // function displayWord() {
 //   var wordDisplay = document.getElementById("word-display");
+// function displayWord() {
+//   var wordDisplay = document.getElementById("word-display");
 
+//   // Apply dissolve effect to hide the current word
+//   wordDisplay.classList.remove("appear");
+//   wordDisplay.classList.add("dissolve");
 //   // Apply dissolve effect to hide the current word
 //   wordDisplay.classList.remove("appear");
 //   wordDisplay.classList.add("dissolve");
@@ -139,11 +144,18 @@ function isHomePage() {
 //   setTimeout(function () {
 //     // Update the content with the new word
 //     wordDisplay.textContent = word[currentIndex];
+//   setTimeout(function () {
+//     // Update the content with the new word
+//     wordDisplay.textContent = word[currentIndex];
 
 //     // Apply appear effect to show the new word
 //     wordDisplay.classList.remove("dissolve");
 //     wordDisplay.classList.add("appear");
+//     // Apply appear effect to show the new word
+//     wordDisplay.classList.remove("dissolve");
+//     wordDisplay.classList.add("appear");
 
+//     currentIndex++;
 //     currentIndex++;
 
 //     if (currentIndex >= word.length) {
